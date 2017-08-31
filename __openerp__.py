@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'hr_department',
+    'name': 'HR Extend',
     'version': '1.0',
     'category': 'ARO HR',
     'sequence': 1,
@@ -30,7 +30,7 @@
                    """,
     'author': 'Solofo',
     'website': 'http://www.aro.mg',
-    'depends': ['base', 'hr','l10n_mg_hr_payroll'],
+    'depends': ['base', 'hr'],
     'data': [
         'views/hr_department_inherit.xml',
         'views/hr_job_inherit.xml',
