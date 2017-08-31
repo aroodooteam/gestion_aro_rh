@@ -30,7 +30,7 @@
                    """,
     'author': 'Solofo',
     'website': 'http://www.aro.mg',
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'hr', 'aro_hr'],
     'data': [
         'views/hr_department_inherit.xml',
         'views/hr_job_inherit.xml',
