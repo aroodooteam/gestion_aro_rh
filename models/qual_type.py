@@ -3,7 +3,7 @@
 from openerp import api, exceptions, fields, models, _
 
 
-class qualType(models.Model):
+class QualType(models.Model):
 
     _inherit = 'qual.type'
 

@@ -19,7 +19,7 @@
                             <field name="annee"/>
                             <field name="diplome_id"/>
                             <field name="branche_id"/>
-                            <field name="niveau" colspan="4"/>
+                            <field name="niveau_id"/>
                             <field name="specialite"/>
                             <field name="lieu"/>
                         </group>
@@ -39,7 +39,7 @@
                     <field name="annee"/>
                     <field name="diplome_id"/>
                     <field name="branche_id"/>
-                    <field name="niveau" colspan="4"/>
+                    <field name="niveau_id"/>
                     <field name="specialite"/>
                     <field name="lieu"/>
                 </tree>
