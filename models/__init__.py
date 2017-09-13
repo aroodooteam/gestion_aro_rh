@@ -20,9 +20,10 @@
 ##############################################################################
 # EXERCICE SUR AJOUT DES CHAMPS
 
+import hr_employee
 import hr_department
 import hr_job
-# import hr_employee_category
+import hr_employee_category
 import hr_employee_career
 import hr_employee_formation_module
 import sanction_type
