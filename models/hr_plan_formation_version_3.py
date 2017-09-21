@@ -23,6 +23,7 @@ class hrPlanFormationVersion3(models.Model):
     test_besoin = fields.Char(string='Besoin Test')
     session_plan_ids = fields.One2many('hr.session.plan.version_3', 'plan_formation_id', string='session')
     observations = fields.Text(string='Observations')
+    code_plan = fields.Char(string='Code plan')
 
     # compute field
     @api.depends ('beneficiaire', 'besoin_accorde')

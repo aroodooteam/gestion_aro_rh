@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    	<!-- vue form niveau etudes -->
+    	<record model="ir.ui.view" id="niveau_etudes_form">
+    		<field name="name">niveau_etudes.form</field>
+    		<field name="model">hr.niveau.etudes</field>
+    		<field name="arch" type="xml">
+    			<form string="Niveau d'études">
+    				<header>
+    				</header>
+    				<sheet>
+    					<h1>
+    						<label string="Niveau d'études"/>
+    					</h1>
+    					<group>
+    						<field name="name"/>
+    						<field name="niveau"/>
+    					</group>
+    				</sheet>
+    			</form>
+    		</field>
+    	</record>
+
+    	<!--vue tree niveau etudes -->
+    	<record model='ir.ui.view' id='niveau_etudes_tree'>
+    		<field name='name'>niveau_etudes.tree</field>
+    		<field name='model'>hr.niveau.etudes</field>
+    		<field name='arch' type='xml'>
+    			<tree string='description'>
+    				<field name="name"/>
+    				<field name="niveau"/>
+    			</tree>
+    		</field>
+    	</record>
+
+    	<record id="action_gestion_niveau" model="ir.actions.act_window">
+    		<field name="name">Niveau d'études</field>
+    		<field name="res_model">hr.niveau.etudes</field>
+    		<field name="view_type">form</field>
+    		<field name="view_mode">tree,form</field>
+    	</record>
+
+    	<menuitem id="gestion_niveau_menu" name="Niveau" parent="menu_hr_diplome_root" action="action_gestion_niveau"/>
+
+
+
+    </data>
+</openerp>

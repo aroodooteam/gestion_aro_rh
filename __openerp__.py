@@ -37,7 +37,7 @@
         'views/common_menu.xml',
         'views/hr_employee_career.xml',
         'views/hr_employee_formation_module_view.xml',
-        # 'views/hr_career.xml',
+        'views/hr_employee_branche.xml',
         'views/hr_formation_instructor.xml',
         'views/sanction_type_view.xml',
         'views/hr_employee_sanction_view.xml',
@@ -54,6 +54,7 @@
         'views/hr_employee_decoration.xml',
         'views/hr_employee_note_view.xml',
         'views/hr_employee_last_job_view.xml',
+        'views/hr_niveau_etudes.xml',
     ],
 
 
