@@ -63,8 +63,8 @@
                                 </field>
                             </page>
                             <page string="Formation">
-                                <label for="session_plan_formation_3_ids"/>
-                                <field name="session_plan_formation_3_ids">
+                                <label for="session_plan_formation_ids"/>
+                                <field name="session_plan_formation_ids">
                                     <tree>
                                         <field name="date_session"/>
                                         <field name="plan_formation_branche_id"/>

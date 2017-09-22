@@ -3,8 +3,8 @@
 from openerp import api,  exceptions,  fields,  models,  _
 
 
-class hrPlanFormationVersion3(models.Model):
-    _name = 'hr.plan.formation.version_3'
+class HrPlanFormation(models.Model):
+    _name = 'hr.plan.formation'
 
     name = fields.Char(string=u'Libellé')
     objectif_id = fields.Many2one('hr.formation.objectif', string='Objectif', required=True)
@@ -21,7 +21,7 @@ class hrPlanFormationVersion3(models.Model):
     taken_seats=fields.Float( string='Taux', digits=(4, 2), compute="_taken_seats_2")
     cout = fields.Float(string=u'Coût total', digits=(6, 2))
     test_besoin = fields.Char(string='Besoin Test')
-    session_plan_ids = fields.One2many('hr.session.plan.version_3', 'plan_formation_id', string='session')
+    session_plan_ids = fields.One2many('hr.session.plan', 'plan_formation_id', string='session')
     observations = fields.Text(string='Observations')
     code_plan = fields.Char(string='Code plan')
 
@@ -36,7 +36,7 @@ class hrPlanFormationVersion3(models.Model):
 
     @api.multi
     def name_get(self):
-        result = super(hrPlanFormationVersion3,  self).name_get()
+        result = super(HrPlanFormationVersion,  self).name_get()
         res = []
         print("result = %s" % result)
         for rec in result:

@@ -5,7 +5,7 @@
 
         <record id="view_session_plan_form_3" model="ir.ui.view">
             <field name="name">hr.session.plan.version_3.form</field>
-            <field name="model">hr.session.plan.version_3</field>
+            <field name="model">hr.session.plan</field>
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <form string="Session de formation" colspan="2">
@@ -37,7 +37,7 @@
 
         <record id="view_session_plan_tree_3" model="ir.ui.view">
             <field name="name">hr.session.plan.version_3.tree</field>
-            <field name="model">hr.session.plan.version_3</field>
+            <field name="model">hr.session.plan</field>
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <tree string="Module">
@@ -53,7 +53,7 @@
         <!-- Action du menu session de formation-->
         <record model="ir.actions.act_window" id="action_gestion_session">
             <field name="name">Session</field>
-            <field name="res_model">hr.session.plan.version_3</field>
+            <field name="res_model">hr.session.plan</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">

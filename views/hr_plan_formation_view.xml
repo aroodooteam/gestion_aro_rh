@@ -6,7 +6,7 @@
 
         <record id="view_plan_formation_form_3" model="ir.ui.view">
             <field name="name">hr.plan.formation.version_3.form</field>
-            <field name="model">hr.plan.formation.version_3</field>
+            <field name="model">hr.plan.formation</field>
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <form string="Plan de formation" colspan="2">
@@ -78,7 +78,7 @@
 
         <record id="view_plan_formation_tree_3" model="ir.ui.view">
             <field name="name">hr.plan.formation.version_3.tree</field>
-            <field name="model">hr.plan.formation.version_3</field>
+            <field name="model">hr.plan.formation</field>
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <tree string="Module">
@@ -103,7 +103,7 @@
 
         <record id="view_plan_formation_search_3" model="ir.ui.view">
             <field name="name">hr.plan.formation.version_3.search</field>
-            <field name="model">hr.plan.formation.version_3</field>
+            <field name="model">hr.plan.formation</field>
             <field name="type">search</field>
             <field name="arch" type="xml">
                 <search string="Formation">
@@ -125,7 +125,7 @@
 
         <record id="view_plan_formation_calendar_3" model="ir.ui.view">
             <field name="name">hr.plan.formation.version_3.calendar</field>
-            <field name="model">hr.plan.formation.version_3</field>
+            <field name="model">hr.plan.formation</field>
             <field name="arch" type="xml">
                 <calendar string="Plan Calendar" date_start="date_start" date_stop="date_end" color="intervenant">
                     <field name="module_id"/>
@@ -137,7 +137,7 @@
 
         <record id="view_plan_formation_gantt_3" model="ir.ui.view">
             <field name="name">hr.plan.formation.version_3.gantt</field>
-            <field name="model">hr.plan.formation.version_3</field>
+            <field name="model">hr.plan.formation</field>
             <field name="arch" type="xml">
                 <gantt string="Plan Gantt" date_start="date_start" date_stop="date_end" default_group_by="name">
                     <!--field name="module_id"/-->
@@ -149,7 +149,7 @@
 
         <record model="ir.actions.act_window" id="action_gestion_plan">
             <field name="name">Plan</field>
-            <field name="res_model">hr.plan.formation.version_3</field>
+            <field name="res_model">hr.plan.formation</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form,calendar,gantt</field>
             <field name="search_view_id" ref="view_plan_formation_search_3"/>

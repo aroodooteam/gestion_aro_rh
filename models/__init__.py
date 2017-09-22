@@ -32,8 +32,8 @@ import hr_niveau_etudes
 import qual_type
 import hr_formation_instructor
 import hr_formation_objectif
-import hr_plan_formation_version_3
-import hr_session_plan_version_3
+import hr_plan_formation
+import hr_session_plan
 import hr_formation_participant
 import hr_session_formation_version_2
 import hr_plan_formation_version_2
