@@ -29,7 +29,7 @@
                             <field name="work_phone"/>
                         </div>
                         <notebook colspan="4">
-                            <page string="Carrière" groups="base.group_hr_manager">
+                            <page string="Carrière" groups="base.group_hr_manager,base.group_hr_user">
                                 <field name="career_ids" colspan="4" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="date" colspan="4"/>
@@ -50,7 +50,7 @@
                                     </form>
                                 </field>
                             </page>
-                            <page string="Contrat" class="oe_page_contrat" accesskey="C" groups="base.group_hr_manager">
+                            <page string="Contrat" class="oe_page_contrat" accesskey="C" groups="base.group_hr_manager,base.group_hr_user">
                                 <field colspan="4" name="contract_ids" nolabel="1"  context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="name" />
@@ -73,7 +73,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="E-learning">
+                            <page string="E-learning" groups="base.group_hr_manager,base.group_hr_user">
                                 <label for="session_elearning_ids"/>
                                 <field name="session_elearning_ids">
                                     <tree>
@@ -84,7 +84,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Diplômes" groups="base.group_hr_manager">
+                            <page string="Diplômes" groups="base.group_hr_manager,base.group_hr_user">
                                 <field name="diplome_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="ordre" colspan="4"/>
@@ -97,7 +97,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Sanctions" groups="base.group_hr_manager">
+                            <page string="Sanctions" groups="base.group_hr_manager,base.group_hr_user">
                                 <field colspan="4" name="sanction_ids" nolabel="1" context="{'default_name': active_id}">
                                     <tree>
                                         <field colspan="4" name="date" />
@@ -120,7 +120,7 @@
                                     </form>
                                 </field>
                             </page>
-                            <page string="Distinction" groups="base.group_hr_manager">
+                            <page string="Distinction" groups="base.group_hr_manager,base.group_hr_user">
                                 <field name="decoration_ids" colspan="4" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee"/>
@@ -128,7 +128,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Notations" groups="base.group_hr_manager">
+                            <page string="Notations" groups="base.group_hr_manager,base.group_hr_user">
                                 <field name="note_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee" />
@@ -137,7 +137,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Emplois antérieurs" groups="base.group_hr_manager">
+                            <page string="Emplois antérieurs" groups="base.group_hr_manager,base.group_hr_user">
                                 <field name="lastjob_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee"/>
@@ -284,8 +284,13 @@
         </record>
 
 
-        <menuitem id="menu_action_saisie_career" name="Saisie Carrière" parent="menu_hr_career_root" action="action_saisie_career" sequence="2"/>
+        <menuitem id="menu_action_saisie_career"
+                  name="Saisie Carrière"
+                  parent="menu_hr_career_root"
+                  action="action_saisie_career"
+                  sequence="2"
+                  groups="base.group_hr_manager"/>
         <menuitem id="menu_action_gestion_career" name="Carrière" parent="menu_hr_career_root" action="action_gestion_career" sequence="1"/>
-
+        
     </data>
 </openerp>

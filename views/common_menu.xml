@@ -14,6 +14,7 @@
             id="menu_hr_formation_root"
             name="Gestion de la formation"
             parent="hr.menu_hr_root"
+            groups="base.group_hr_manager"
             sequence ="2"/>
 
         <menuitem

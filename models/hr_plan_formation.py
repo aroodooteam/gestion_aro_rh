@@ -36,7 +36,7 @@ class HrPlanFormation(models.Model):
 
     @api.multi
     def name_get(self):
-        result = super(HrPlanFormationVersion,  self).name_get()
+        result = super(HrPlanFormation,self).name_get()
         res = []
         print("result = %s" % result)
         for rec in result:

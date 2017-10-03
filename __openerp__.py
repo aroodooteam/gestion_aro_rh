@@ -32,6 +32,7 @@
     'website': 'http://www.aro.mg',
     'depends': ['base', 'hr', 'aro_hr'],
     'data': [
+        'security/ir.model.access.csv',
         'views/hr_department_inherit.xml',
         'views/hr_job_inherit.xml',
         'views/common_menu.xml',
@@ -54,7 +55,7 @@
         'views/hr_employee_decoration.xml',
         'views/hr_employee_note_view.xml',
         'views/hr_employee_last_job_view.xml',
-        'views/hr_niveau_etudes.xml',
+        'views/hr_niveau_etudes.xml',        
     ],
 
 

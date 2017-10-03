@@ -10,6 +10,10 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_action_gestion_sanction" name="Saisir une sanction" parent="menu_hr_career_root" action="action_hr_employee_sanction_2"/>
+        <menuitem id="menu_action_gestion_sanction" 
+                  name="Saisir une sanction" 
+                  parent="menu_hr_career_root"  
+                  groups="base.group_hr_manager"
+                  action="action_hr_employee_sanction_2"/>
     </data>
 </openerp>
