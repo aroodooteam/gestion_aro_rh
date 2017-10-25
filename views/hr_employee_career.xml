@@ -51,6 +51,7 @@
                                     </form>
                                 </field>
                             </page>
+                            <!--
                             <page string="Contrat" class="oe_page_contrat" accesskey="C" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field colspan="4" name="contract_ids" nolabel="1"  context="{'default_employee_id': active_id}">
                                     <tree>
@@ -63,6 +64,7 @@
                                     </tree>
                                 </field>
                             </page>
+                            -->
                             <page string="Formation" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <label for="session_plan_formation_ids"/>
                                 <field name="session_plan_formation_ids">
