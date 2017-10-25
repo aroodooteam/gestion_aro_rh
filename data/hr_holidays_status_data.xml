@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="holiday_status_sl" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">REPOS MALADIE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="True"/>
+        </record>
+        <record id="hr_holidays_status_conge_de_maternite_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">CONGE DE MATERNITE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_absence_autorisee_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">ABSENCE AUTORISEE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_hospitalisation_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">HOSPITALISATION</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_absence_irreguliere_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">ABSENCE IRREGULIERE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_conge_annuel_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">CONGE ANNUEL</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_a_valoir_sur_conge_r0" model="hr.holidays.status">
+            <field name="frequency">monthly</field>
+            <field name="double_validation" eval="True"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="True"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">A VALOIR SUR CONGE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="True"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_mise_a_pied_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">MISE A PIED</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_a_deduire_syndicat_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">A DEDUIRE SYNDICAT</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_missiontournee_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">MISSION-TOURNEE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+        <record id="hr_holidays_status_convalescence_r0" model="hr.holidays.status">
+            <field name="double_validation" eval="False"/>
+            <field name="anciennete" eval="False"/>
+            <field name="active" eval="True"/>
+            <field name="global_holiday" eval="False"/>
+            <field name="weekend" eval="False"/>
+            <field name="reset" eval="False"/>
+            <field name="name">CONVALESCENCE</field>
+            <field name="days">0.0</field>
+            <field name="payed" eval="False"/>
+            <field name="color_name">red</field>
+            <field name="limit" eval="False"/>
+        </record>
+    </data>
+</openerp>

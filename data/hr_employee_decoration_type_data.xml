@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="hr_employee_decoration_type_medaille_dargent_r0" model="hr.employee.decoration.type">
+            <field name="code">ARG</field>
+            <field name="name">MEDAILLE D'ARGENT</field>
+        </record>
+        <record id="hr_employee_decoration_type_medaille_de_bronze_r0" model="hr.employee.decoration.type">
+            <field name="code">BRONZE</field>
+            <field name="name">MEDAILLE DE BRONZE</field>
+        </record>
+        <record id="hr_employee_decoration_type_commandeur_de_lordre_du_merite_r0" model="hr.employee.decoration.type">
+            <field name="code">CCOM</field>
+            <field name="name">COMMANDEUR DE L'ORDRE DU MERITE</field>
+        </record>
+        <record id="hr_employee_decoration_type_commandeur_de_lordre_national_r0" model="hr.employee.decoration.type">
+            <field name="code">CCON</field>
+            <field name="name">COMMANDEUR DE L'ORDRE NATIONAL</field>
+        </record>
+        <record id="hr_employee_decoration_type_chevalier_de_lordre_de_merite_r0" model="hr.employee.decoration.type">
+            <field name="code">COM</field>
+            <field name="name">CHEVALIER DE L'ORDRE DE MERITE</field>
+        </record>
+        <record id="hr_employee_decoration_type_medaille_de_la_compagnie_r0" model="hr.employee.decoration.type">
+            <field name="code">COMP</field>
+            <field name="name">MEDAILLE DE LA COMPAGNIE</field>
+        </record>
+        <record id="hr_employee_decoration_type_medaille_de_la_compagnie_30_ans_r0" model="hr.employee.decoration.type">
+            <field name="code">COMP30</field>
+            <field name="name">MEDAILLE DE LA COMPAGNIE 30 ANS</field>
+        </record>
+        <record id="hr_employee_decoration_type_medaille_de_la_compagnie_35_ans_r0" model="hr.employee.decoration.type">
+            <field name="code">COMP35</field>
+            <field name="name">MEDAILLE DE LA COMPAGNIE 35 ANS</field>
+        </record>
+        <record id="hr_employee_decoration_type_medaille_de_la_compagnie_40_ans_r0" model="hr.employee.decoration.type">
+            <field name="code">COMP40</field>
+            <field name="name">MEDAILLE DE LA COMPAGNIE 40 ANS</field>
+        </record>
+        <record id="hr_employee_decoration_type_chevalier_de_lordre_national_r0" model="hr.employee.decoration.type">
+            <field name="code">CON</field>
+            <field name="name">CHEVALIER DE L'ORDRE NATIONAL</field>
+        </record>
+        <record id="hr_employee_decoration_type_grandecroix_de_lordre_national_r0" model="hr.employee.decoration.type">
+            <field name="code">GCON</field>
+            <field name="name">GRANDE-CROIX DE L'ORDRE NATIONAL</field>
+        </record>
+        <record id="hr_employee_decoration_type_grandofficier_de_lordre_national_r0" model="hr.employee.decoration.type">
+            <field name="code">GON</field>
+            <field name="name">GRAND-OFFICIER DE L'ORDRE NATIONAL</field>
+        </record>
+        <record id="hr_employee_decoration_type_officier_de_lordre_du_merite_r0" model="hr.employee.decoration.type">
+            <field name="code">OOM</field>
+            <field name="name">OFFICIER DE L'ORDRE DU MERITE</field>
+        </record>
+        <record id="hr_employee_decoration_type_officier_de_lordre_national_r0" model="hr.employee.decoration.type">
+            <field name="code">OON</field>
+            <field name="name">OFFICIER DE L'ORDRE NATIONAL</field>
+        </record>
+    </data>
+</openerp>

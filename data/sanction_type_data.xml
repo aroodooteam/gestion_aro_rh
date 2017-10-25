@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="sanction_type_avertissemnt_r0" model="sanction.type">
+            <field name="code_sanction">AVR</field>
+            <field name="name">AVERTISSEMNT</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_blame_r0" model="sanction.type">
+            <field name="code_sanction">BLA</field>
+            <field name="name">BLAME</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_dernier_avertissement_r0" model="sanction.type">
+            <field name="code_sanction">DAV</field>
+            <field name="name">DERNIER AVERTISSEMENT</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_licenciement_r0" model="sanction.type">
+            <field name="code_sanction">LIC</field>
+            <field name="name">LICENCIEMENT</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_mise_a_pied_r0" model="sanction.type">
+            <field name="code_sanction">MAP</field>
+            <field name="name">MISE A PIED</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_rappel_a_lordre_r0" model="sanction.type">
+            <field name="code_sanction">RAP</field>
+            <field name="name">RAPPEL A L'ORDRE</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+        <record id="sanction_type_retrogradation_r0" model="sanction.type">
+            <field name="code_sanction">RTG</field>
+            <field name="name">RETROGRADATION</field>
+            <field name="notification" eval="False"/>
+            <field name="interview" eval="False"/>
+            <field name="days_work" eval="False"/>
+        </record>
+    </data>
+</openerp>

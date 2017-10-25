@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="3713" model="hr.department">
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">0</field>
+            <field name="active" eval="True"/>
+            <field name="name">ARO</field>
+            <field name="niveau">0</field>
+        </record>
+        <record id="3714" model="hr.department">
+            <field name="code_analytique">A100</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">0</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3713"/>
+            <field name="code_service">A100</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction Générale</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DG</field>
+        </record>
+        <record id="3752" model="hr.department">
+            <field name="code_analytique">E200</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">E200</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction Commerciale</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DCOM</field>
+        </record>
+        <record id="3745" model="hr.department">
+            <field name="code_analytique">D100</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">D100</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction Inspection</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DI</field>
+        </record>
+        <record id="3766" model="hr.department">
+            <field name="code_analytique">G200</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">A101</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">G200</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction des Ressources Humaines</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DRH</field>
+        </record>
+        <record id="3802" model="hr.department">
+            <field name="code_analytique">A180</field>
+            <field name="date">2009-04-01</field>
+            <field name="rattachement">A180</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">A180</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Réassurances</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">stechnAc</field>
+        </record>
+        <record id="3715" model="hr.department">
+            <field name="code_analytique">A103</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">A103</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Assistanat de Direction</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">ASSDG</field>
+        </record>
+        <record id="3716" model="hr.department">
+            <field name="code_analytique">A140</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">A140</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Chargés d'étude</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CHETUD</field>
+        </record>
+        <record id="3717" model="hr.department">
+            <field name="code_analytique">A170</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">A170</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Contrôle Interne</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">Ctrl Int</field>
+        </record>
+        <record id="3718" model="hr.department">
+            <field name="code_analytique">A181</field>
+            <field name="date">2009-04-01</field>
+            <field name="rattachement">A180</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3802"/>
+            <field name="code_service">A181</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Tecniques Acceptations</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">stechnAc</field>
+        </record>
+        <record id="3719" model="hr.department">
+            <field name="code_analytique">A182</field>
+            <field name="date">2009-04-01</field>
+            <field name="rattachement">A180</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3802"/>
+            <field name="code_service">A182</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Technique Cession</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sTechCes</field>
+        </record>
+        <record id="3720" model="hr.department">
+            <field name="code_analytique">A183</field>
+            <field name="date">2009-04-01</field>
+            <field name="rattachement">A180</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3802"/>
+            <field name="code_service">A183</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Compta Réass</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sCptaréa</field>
+        </record>
+        <record id="3721" model="hr.department">
+            <field name="code_analytique">A190</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">A190</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Chargé de Communication</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">CDCOM</field>
+        </record>
+        <record id="3722" model="hr.department">
+            <field name="code_analytique">A200</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3752"/>
+            <field name="code_service">A200</field>
+            <field name="service_gestion">A200</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Unité d'étude marketing</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">uMK</field>
+        </record>
+        <record id="3723" model="hr.department">
+            <field name="code_analytique">B300</field>
+            <field name="date">2010-01-01</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">B300</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction Technique</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DT</field>
+        </record>
+        <record id="3724" model="hr.department">
+            <field name="code_analytique">B301</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">B300</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3723"/>
+            <field name="code_service">B301</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction technique adjoint</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DTA</field>
+        </record>
+        <record id="3725" model="hr.department">
+            <field name="code_analytique">B302</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">B300</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">B302</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Chargé d'Etudes</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CTEC</field>
+        </record>
+        <record id="3726" model="hr.department">
+            <field name="code_analytique">B310</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B300</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3723"/>
+            <field name="code_service">B310</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Dpt Aviation  Incendie &amp; Risques Divers</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DAIRD</field>
+        </record>
+        <record id="3727" model="hr.department">
+            <field name="code_analytique">B311</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B310</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3726"/>
+            <field name="code_service">B311</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce ENGINEERING</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">SENG</field>
+        </record>
+        <record id="3728" model="hr.department">
+            <field name="code_analytique">B312</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B310</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3726"/>
+            <field name="code_service">B312</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce AVIATION</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sAv</field>
+        </record>
+        <record id="3729" model="hr.department">
+            <field name="code_analytique">B313</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B310</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3726"/>
+            <field name="code_service">B313</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Production IRD</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sProdIRD</field>
+        </record>
+        <record id="3730" model="hr.department">
+            <field name="code_analytique">B314</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B310</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3726"/>
+            <field name="code_service">B314</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Sinistres IRD</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sSinIRD</field>
+        </record>
+        <record id="3731" model="hr.department">
+            <field name="code_analytique">B320</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B300</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3723"/>
+            <field name="code_service">B320</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Transport</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DTRANS</field>
+        </record>
+        <record id="3732" model="hr.department">
+            <field name="code_analytique">B321</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B320</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3731"/>
+            <field name="code_service">B321</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Production Maritime</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sProdMar</field>
+        </record>
+        <record id="3733" model="hr.department">
+            <field name="code_analytique">B322</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B320</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3731"/>
+            <field name="code_service">B322</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Sinistres Maritime</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sSinMar</field>
+        </record>
+        <record id="3734" model="hr.department">
+            <field name="code_analytique">B323</field>
+            <field name="date">2010-03-01</field>
+            <field name="rattachement">B320</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3731"/>
+            <field name="code_service">B323</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Production Auto</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sProdAut</field>
+        </record>
+        <record id="3735" model="hr.department">
+            <field name="code_analytique">B324</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B320</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3731"/>
+            <field name="code_service">B324</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Sinistres Auto</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sSinAuto</field>
+        </record>
+        <record id="3736" model="hr.department">
+            <field name="code_analytique">B330</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B300</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">B330</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Affaires Juridiques</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DAJ</field>
+        </record>
+        <record id="3737" model="hr.department">
+            <field name="code_analytique">B331</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B330</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3736"/>
+            <field name="code_service">B331</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Recours et Récupération</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sRecRécu</field>
+        </record>
+        <record id="3738" model="hr.department">
+            <field name="code_analytique">B332</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B330</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">B332</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Affaires Générales</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sAffGnle</field>
+        </record>
+        <record id="3739" model="hr.department">
+            <field name="code_analytique">B341</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">B340</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">B341</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Contentieux Auto</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sCTXAuto</field>
+        </record>
+        <record id="3740" model="hr.department">
+            <field name="code_analytique">C110</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">C110</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Vie et Ass de Personnes</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dVAP</field>
+        </record>
+        <record id="3741" model="hr.department">
+            <field name="code_analytique">C113</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">C110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3740"/>
+            <field name="code_service">C113</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Production Vie</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sPV</field>
+        </record>
+        <record id="3742" model="hr.department">
+            <field name="code_analytique">C114</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">C110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3740"/>
+            <field name="code_service">C114</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Sinistres Vie</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sSV</field>
+        </record>
+        <record id="3743" model="hr.department">
+            <field name="code_analytique">C115</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">C110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3740"/>
+            <field name="code_service">C115</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Production Santé et Accidents</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sPSA</field>
+        </record>
+        <record id="3744" model="hr.department">
+            <field name="code_analytique">C116</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">C110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3740"/>
+            <field name="code_service">C116</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Sinistres Santé et Accidents</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sSSA</field>
+        </record>
+        <record id="3746" model="hr.department">
+            <field name="code_analytique">D110</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">D100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3745"/>
+            <field name="code_service">D110</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Inspection Technique</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dInspTec</field>
+        </record>
+        <record id="3747" model="hr.department">
+            <field name="code_analytique">D120</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">D100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3745"/>
+            <field name="code_service">D120</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Inspection Comptable</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dInspCpt</field>
+        </record>
+        <record id="3749" model="hr.department">
+            <field name="code_analytique">E171</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">E170</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E171</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Comptabilité Agences</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sComptaA</field>
+        </record>
+        <record id="3750" model="hr.department">
+            <field name="code_analytique">E180</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">E100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E180</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Dpt Grands Comptes</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DGC</field>
+        </record>
+        <record id="3751" model="hr.department">
+            <field name="code_analytique">E191</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">E100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E191</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Cellule Enquêtes Sinistres</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">CES</field>
+        </record>
+        <record id="3753" model="hr.department">
+            <field name="code_analytique">E201</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">E200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E201</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Appui commercial</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">APPCOM</field>
+        </record>
+        <record id="3754" model="hr.department">
+            <field name="code_analytique">E200</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">E200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E210</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Réseau Tanà et Gds comptes</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dRTGC</field>
+        </record>
+        <record id="3755" model="hr.department">
+            <field name="code_analytique">E211</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">E210</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E212</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Réseau Gds comptes</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">rGC</field>
+        </record>
+        <record id="3756" model="hr.department">
+            <field name="code_analytique">E220</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">E200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">E220</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Réseau Hors Tanà</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dRHT</field>
+        </record>
+        <record id="3757" model="hr.department">
+            <field name="code_analytique">G100</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A101</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <field name="code_service">G100</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Direction Financière et Comptable</field>
+            <field name="niveau">3</field>
+            <field name="abreviation">DFP</field>
+        </record>
+        <record id="3758" model="hr.department">
+            <field name="code_analytique">G110</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">G100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3757"/>
+            <field name="code_service">G110</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Comptabilité et Trésorerie</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dC</field>
+        </record>
+        <record id="3759" model="hr.department">
+            <field name="code_analytique">G111</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">G110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3758"/>
+            <field name="code_service">G111</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Comptabilité Générale</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sCptaGnl</field>
+        </record>
+        <record id="3760" model="hr.department">
+            <field name="code_analytique">G113</field>
+            <field name="date">2009-01-26</field>
+            <field name="rattachement">G100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G113</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Chargé de la Fiscalité</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CHFisc</field>
+        </record>
+        <record id="3761" model="hr.department">
+            <field name="code_analytique">G115</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">G110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3758"/>
+            <field name="code_service">G115</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Trésorerie &amp; Fiscalité</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sTrésorF</field>
+        </record>
+        <record id="3762" model="hr.department">
+            <field name="code_analytique">G120</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">G100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G120</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Gestion des Immobiliers</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dG°Immo</field>
+        </record>
+        <record id="3763" model="hr.department">
+            <field name="code_analytique">G121</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">G120</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G121</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Cellule Aménagement</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CellAmng</field>
+        </record>
+        <record id="3764" model="hr.department">
+            <field name="code_analytique">G130</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">G100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G130</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Division Rémunérations Prêts et Avantages</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dAP</field>
+        </record>
+        <record id="3765" model="hr.department">
+            <field name="code_analytique">G135</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">G130</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G135</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Cellule Sociale</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CS</field>
+        </record>
+        <record id="3767" model="hr.department">
+            <field name="code_analytique">G210</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">G200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3766"/>
+            <field name="code_service">G210</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Administration du Personnel</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dAP</field>
+        </record>
+        <record id="3768" model="hr.department">
+            <field name="code_analytique">G212</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">G200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G212</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Cellule sociale</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">cSOC</field>
+        </record>
+        <record id="3769" model="hr.department">
+            <field name="code_analytique">G220</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">G200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G220</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Division RH</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dRH</field>
+        </record>
+        <record id="3770" model="hr.department">
+            <field name="code_analytique">G230</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">G200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G230</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Division AP et RP</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dAPRP</field>
+        </record>
+        <record id="3771" model="hr.department">
+            <field name="code_analytique">G231</field>
+            <field name="date">2014-11-01</field>
+            <field name="rattachement">G230</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G231</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service AP et RP</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sARRP</field>
+        </record>
+        <record id="3772" model="hr.department">
+            <field name="code_analytique">G240</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">G200</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3766"/>
+            <field name="code_service">G240</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Formation</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DF</field>
+        </record>
+        <record id="3773" model="hr.department">
+            <field name="code_analytique">G241</field>
+            <field name="date">2016-03-01</field>
+            <field name="rattachement">G240</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">G241</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Centre de documentation</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CDU</field>
+        </record>
+        <record id="3774" model="hr.department">
+            <field name="code_analytique">H110</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A101</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">H110</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Moyens Généreaux</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dMyGnx</field>
+        </record>
+        <record id="3775" model="hr.department">
+            <field name="code_analytique">H111</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">H110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3774"/>
+            <field name="code_service">H111</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Economat</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sEconoma</field>
+        </record>
+        <record id="3776" model="hr.department">
+            <field name="code_analytique">H113</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">H110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3774"/>
+            <field name="code_service">H113</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Logistique</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sLog</field>
+        </record>
+        <record id="3777" model="hr.department">
+            <field name="code_analytique">J112</field>
+            <field name="date">2010-01-01</field>
+            <field name="rattachement">J110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3774"/>
+            <field name="code_service">J112</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Sce Gestion des Travaux</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sGT</field>
+        </record>
+        <record id="3778" model="hr.department">
+            <field name="code_analytique">K110</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">A100</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3714"/>
+            <!-- MISSING xml_id for field manager_id (many2one to hr.employee) for those ids: 9 (db: gestion_aro_rh@localhost:8109) -->
+            <field name="code_service">K110</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Département Système d'Information</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">dSI</field>
+        </record>
+        <record id="3779" model="hr.department">
+            <field name="code_analytique">K111</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">K110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3778"/>
+            <!-- MISSING xml_id for field manager_id (many2one to hr.employee) for those ids: 55 (db: gestion_aro_rh@localhost:8109) -->
+            <field name="code_service">K111</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Exploitation</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sExp</field>
+        </record>
+        <record id="3780" model="hr.department">
+            <field name="code_analytique">K112</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">K110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3778"/>
+            <!-- MISSING xml_id for field manager_id (many2one to hr.employee) for those ids: 53 (db: gestion_aro_rh@localhost:8109) -->
+            <field name="code_service">K112</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Etudes</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sEtd</field>
+        </record>
+        <record id="3781" model="hr.department">
+            <field name="code_analytique">K113</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">K110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3778"/>
+            <!-- MISSING xml_id for field manager_id (many2one to hr.employee) for those ids: 54 (db: gestion_aro_rh@localhost:8109) -->
+            <field name="code_service">K113</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Service Maintenance</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">sMaint</field>
+        </record>
+        <record id="3782" model="hr.department">
+            <field name="code_analytique">K114</field>
+            <field name="date">2010-03-19</field>
+            <field name="rattachement">K110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3778"/>
+            <field name="code_service">K114</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Chargé d'Etudes SI</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">CESI</field>
+        </record>
+        <record id="3783" model="hr.department">
+            <field name="code_analytique">V011</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref=".3752"/>
+            <field name="code_service">V011</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Antsahavola</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DAA</field>
+        </record>
+        <record id="3784" model="hr.department">
+            <field name="code_analytique">V014</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V011</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V014</field>
+            <field name="service_gestion">V014</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Ambatondrazaka</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag Ambat</field>
+        </record>
+        <record id="3785" model="hr.department">
+            <field name="code_analytique">V016</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V016</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Avenue de l'indépendance</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">Ag16</field>
+        </record>
+        <record id="3786" model="hr.department">
+            <field name="code_analytique">V018</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V018</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Ampefiloha</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">Ag84</field>
+        </record>
+        <record id="3787" model="hr.department">
+            <field name="code_analytique">V020</field>
+            <field name="compte_agence">410020</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V020</field>
+            <field name="service_gestion">V020</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470105</field>
+            <field name="name">DR Fianarantsoa</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Fiana</field>
+        </record>
+        <record id="3788" model="hr.department">
+            <field name="code_analytique">V023</field>
+            <field name="compte_agence">410020</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V020</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V023</field>
+            <field name="service_gestion">V020</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470105</field>
+            <field name="name">Agence Manakara</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag Mkara</field>
+        </record>
+        <record id="3789" model="hr.department">
+            <field name="code_analytique">V032</field>
+            <field name="compte_agence">410032</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V032</field>
+            <field name="service_gestion">V032</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470107</field>
+            <field name="name">DR Toliara</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Tolia</field>
+        </record>
+        <record id="3790" model="hr.department">
+            <field name="code_analytique">V035</field>
+            <field name="compte_agence">410035</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V032</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V035</field>
+            <field name="service_gestion">V035</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470149</field>
+            <field name="name">Agence Toalagnaro</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag Fd</field>
+        </record>
+        <record id="3791" model="hr.department">
+            <field name="code_analytique">V036</field>
+            <field name="compte_agence">410036</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V036</field>
+            <field name="service_gestion">V036</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470147</field>
+            <field name="name">DR Morondava</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Mva</field>
+        </record>
+        <record id="3792" model="hr.department">
+            <field name="code_analytique">V040</field>
+            <field name="compte_agence">410041</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V040</field>
+            <field name="service_gestion">V040</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470115</field>
+            <field name="name">DR Mahajanga</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Mga</field>
+        </record>
+        <record id="3793" model="hr.department">
+            <field name="code_analytique">V050</field>
+            <field name="compte_agence">410050</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V050</field>
+            <field name="service_gestion">V050</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470106</field>
+            <field name="name">DR Antsiranana</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Diego</field>
+        </record>
+        <record id="3794" model="hr.department">
+            <field name="code_analytique">V053</field>
+            <field name="compte_agence">410053</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V053</field>
+            <field name="service_gestion">V053</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470148</field>
+            <field name="name">DR Sambava</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Sva</field>
+        </record>
+        <record id="3795" model="hr.department">
+            <field name="code_analytique">V058</field>
+            <field name="compte_agence">410050</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V050</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V058</field>
+            <field name="service_gestion">V050</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470106</field>
+            <field name="name">Agence Ambanja</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag Amja</field>
+        </record>
+        <record id="3796" model="hr.department">
+            <field name="code_analytique">V059</field>
+            <field name="compte_agence">410050</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V050</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V059</field>
+            <field name="service_gestion">V050</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470106</field>
+            <field name="name">Agence Nosy Be</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag NB</field>
+        </record>
+        <record id="3797" model="hr.department">
+            <field name="code_analytique">V061</field>
+            <field name="compte_agence">410061</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V061</field>
+            <field name="service_gestion">V061</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470118</field>
+            <field name="name">DR Toamasina</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Tve</field>
+        </record>
+        <record id="3798" model="hr.department">
+            <field name="code_analytique">V066</field>
+            <field name="compte_agence">410053</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">V053</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V066</field>
+            <field name="service_gestion">V053</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470148</field>
+            <field name="name">Agence Antalaha</field>
+            <field name="niveau">1</field>
+            <field name="abreviation">Ag Anha</field>
+        </record>
+        <record id="3799" model="hr.department">
+            <field name="code_analytique">V070</field>
+            <field name="compte_agence">410070</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V070</field>
+            <field name="service_gestion">V070</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">470116</field>
+            <field name="name">DR Antsirabe</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">DR Abe</field>
+        </record>
+        <record id="3800" model="hr.department">
+            <field name="code_analytique">V081</field>
+            <field name="date">2008-02-20</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V081</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Ankorondrano</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">Ag81</field>
+        </record>
+        <record id="3801" model="hr.department">
+            <field name="code_analytique">V094</field>
+            <field name="date">2017-04-01</field>
+            <field name="rattachement">E110</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="code_service">V094</field>
+            <field name="service_gestion">320</field>
+            <field name="active" eval="True"/>
+            <field name="compte_passage">428608</field>
+            <field name="name">Agence Anosizato</field>
+            <field name="niveau">2</field>
+            <field name="abreviation">Ag 94</field>
+        </record>
+    </data>
+</openerp>

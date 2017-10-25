@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="262" model="hr.employee.category">
+            <field name="name">ARO</field>
+        </record>
+        <record id="393" model="hr.employee.category">
+            <field name="name">E</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="394" model="hr.employee.category">
+            <field name="name">M</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="395" model="hr.employee.category">
+            <field name="name">CM</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="396" model="hr.employee.category">
+            <field name="name">HC</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="397" model="hr.employee.category">
+            <field name="name">CS</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="398" model="hr.employee.category">
+            <field name="name">CD</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="501" model="hr.employee.category">
+            <field name="name">1A</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 1 A</field>
+        </record>
+        <record id="502" model="hr.employee.category">
+            <field name="name">1B</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 1 B</field>
+        </record>
+        <record id="503" model="hr.employee.category">
+            <field name="name">2A</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 2 A</field>
+        </record>
+        <record id="504" model="hr.employee.category">
+            <field name="name">2B</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 2 B</field>
+        </record>
+        <record id="505" model="hr.employee.category">
+            <field name="name">3A</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 3 A</field>
+        </record>
+        <record id="506" model="hr.employee.category">
+            <field name="name">3B</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 3 B</field>
+        </record>
+        <record id="507" model="hr.employee.category">
+            <field name="name">4A</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 4 A</field>
+        </record>
+        <record id="508" model="hr.employee.category">
+            <field name="name">4B</field>
+            <field name="parent_id" ref="gestion_aro_rh.393"/>
+            <field name="libelle_category">EMPLOYE 4 B</field>
+        </record>
+        <record id="509" model="hr.employee.category">
+            <field name="name">5A</field>
+            <field name="parent_id" ref="gestion_aro_rh.394"/>
+            <field name="libelle_category">AGENT DE MAITRISE/INSPECTEUR ASSISTANT</field>
+        </record>
+        <record id="510" model="hr.employee.category">
+            <field name="name">5B</field>
+            <field name="parent_id" ref="gestion_aro_rh.395"/>
+            <field name="libelle_category">SOUS CHEF DE SERVICE/INSPECTEUR STAGIAIRE</field>
+        </record>
+        <record id="511" model="hr.employee.category">
+            <field name="name">HC</field>
+            <field name="parent_id" ref="gestion_aro_rh.396"/>
+            <field name="libelle_category">HORS CATEGORIE</field>
+        </record>
+        <record id="512" model="hr.employee.category">
+            <field name="name">CSA</field>
+            <field name="parent_id" ref="gestion_aro_rh.395"/>
+            <field name="libelle_category">CHEF DE SERVICE ADJOINT/INSPECTEUR 1er ECHELON</field>
+        </record>
+        <record id="513" model="hr.employee.category">
+            <field name="name">CS</field>
+            <field name="parent_id" ref="gestion_aro_rh.395"/>
+            <field name="libelle_category">CHEF DE SERVICE/INSPECTEUR 2eme ECHELON</field>
+        </record>
+        <record id="514" model="hr.employee.category">
+            <field name="name">CD</field>
+            <field name="parent_id" ref="gestion_aro_rh.397"/>
+            <field name="libelle_category">CHEF DE DIVISION/INSPECTEUR 3eme ECHELON</field>
+        </record>
+        <record id="515" model="hr.employee.category">
+            <field name="name">FDP</field>
+            <field name="parent_id" ref="gestion_aro_rh.397"/>
+            <field name="libelle_category">FONDE DE POUVOIR / INSPECTEUR 4eme ECHELON</field>
+        </record>
+        <record id="516" model="hr.employee.category">
+            <field name="name">DA</field>
+            <field name="parent_id" ref="gestion_aro_rh.397"/>
+            <field name="libelle_category">DIRECTEUR ADJOINT/INSPECTEUR GENERAL</field>
+        </record>
+        <record id="517" model="hr.employee.category">
+            <field name="name">DC</field>
+            <field name="parent_id" ref="gestion_aro_rh.398"/>
+            <field name="libelle_category">DIRECTEUR</field>
+        </record>
+        <record id="518" model="hr.employee.category">
+            <field name="name">DGA</field>
+            <field name="parent_id" ref="gestion_aro_rh.398"/>
+            <field name="libelle_category">DIRECTEUR GENERAL ADJOINT</field>
+        </record>
+        <record id="519" model="hr.employee.category">
+            <field name="name">DG</field>
+            <field name="parent_id" ref="gestion_aro_rh.398"/>
+            <field name="libelle_category">DIRECTEUR GENERAL</field>
+        </record>
+        <record id="520" model="hr.employee.category">
+            <field name="name">ADD</field>
+            <field name="parent_id" ref="gestion_aro_rh.398"/>
+            <field name="libelle_category">ADMINISTRATEUR DELEGUE</field>
+        </record>
+        <record id="521" model="hr.employee.category">
+            <field name="name">ST</field>
+            <field name="parent_id" ref="gestion_aro_rh.262"/>
+        </record>
+        <record id="522" model="hr.employee.category">
+            <field name="name">STAG</field>
+            <field name="parent_id" ref="gestion_aro_rh.521"/>
+        </record>
+    </data>
+</openerp>

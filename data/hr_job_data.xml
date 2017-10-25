@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="hr_job_analyste_programmeur_r0" model="hr.job">
+            <field name="code_fonction">ANAPRO</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ANALYSTE PROGRAMMEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistant_r0" model="hr.job">
+            <field name="code_fonction">ASS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistant_en_communication_r0" model="hr.job">
+            <field name="code_fonction">ASSCOM</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANT EN COMMUNICATION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistant_rh_r0" model="hr.job">
+            <field name="code_fonction">ASSRH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANT RH</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistant_technique_r0" model="hr.job">
+            <field name="code_fonction">ASTECH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANT TECHNIQUE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistante_de_direction_r0" model="hr.job">
+            <field name="code_fonction">ASSDIR</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANTE DE DIRECTION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistante_evaluation_et_comin_r0" model="hr.job">
+            <field name="code_fonction">ASSECI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANTE EVALUATION ET COMIN</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_assistante_recrutement_r0" model="hr.job">
+            <field name="code_fonction">ASSREC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ASSISTANTE RECRUTEMENT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_attache_de_direction_r0" model="hr.job">
+            <field name="code_fonction">ATDIR</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ATTACHE DE DIRECTION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_auxiliaire_comptable_r0" model="hr.job">
+            <field name="code_fonction">AUXCPT</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AUXILIAIRE COMPTABLE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_cadre_r0" model="hr.job">
+            <field name="code_fonction">CADRE</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CADRE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_caissier_r0" model="hr.job">
+            <field name="code_fonction">CAI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CAISSIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_adjoint_r0" model="hr.job">
+            <field name="code_fonction">ADJ</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ADJOINT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_adjoint_au_chef_de_departement_r0" model="hr.job">
+            <field name="code_fonction">ADJCD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ADJOINT AU CHEF DE DEPARTEMENT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_charge_r0" model="hr.job">
+            <field name="code_fonction">CHGE</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHARGE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_charge_de_clientele_r0" model="hr.job">
+            <field name="code_fonction">CDC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHARGE DE CLIENTELE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_charge_detudes_r0" model="hr.job">
+            <field name="code_fonction">CHETUD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHARGE D'ETUDES</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chargee_2_communication_r0" model="hr.job">
+            <field name="code_fonction">CHCOM</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHARGEE 2 COMMUNICATION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chauffeur_r0" model="hr.job">
+            <field name="code_fonction">CH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHAUFFEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_dagence_r0" model="hr.job">
+            <field name="code_fonction">CA</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF D'AGENCE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_departement_r0" model="hr.job">
+            <field name="code_fonction">CD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE DEPARTEMENT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_division_r0" model="hr.job">
+            <field name="code_fonction">CDIV</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE DIVISION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_produits_entreprises_r0" model="hr.job">
+            <field name="code_fonction">CPE</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE PRODUITS ENTREPRISES</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_produits_particuliers_r0" model="hr.job">
+            <field name="code_fonction">CPP</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE PRODUITS PARTICULIERS</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_service_r0" model="hr.job">
+            <field name="code_fonction">CS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE SERVICE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_chef_de_service_adjoint_r0" model="hr.job">
+            <field name="code_fonction">CSA</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHEF DE SERVICE ADJOINT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_agent_administratif_r0" model="hr.job">
+            <field name="code_fonction">AGAD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AGENT ADMINISTRATIF</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_agent_daccueil_r0" model="hr.job">
+            <field name="code_fonction">AGACC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AGENT D'ACCUEIL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_agent_de_support_r0" model="hr.job">
+            <field name="code_fonction">AGSUPP</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AGENT DE SUPPORT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_agent_technique_r0" model="hr.job">
+            <field name="code_fonction">AGTECH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AGENT TECHNIQUE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_aide_comptable_r0" model="hr.job">
+            <field name="code_fonction">AIDCPT</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AIDE COMPTABLE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_aide_magasinier_r0" model="hr.job">
+            <field name="code_fonction">AIDMAG</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">AIDE MAGASINIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_inspecteur_sinistres_r0" model="hr.job">
+            <field name="code_fonction">INSPI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INSPECTEUR SINISTRES</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_inspecteur_technique_r0" model="hr.job">
+            <field name="code_fonction">INSTEC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INSPECTEUR TECHNIQUE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_jardinier_r0" model="hr.job">
+            <field name="code_fonction">JARD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">JARDINIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_juriste_r0" model="hr.job">
+            <field name="code_fonction">JURIST</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">JURISTE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_magasinier_r0" model="hr.job">
+            <field name="code_fonction">MAG</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">MAGASINIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_medecin_r0" model="hr.job">
+            <field name="code_fonction">MED</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">MEDECIN</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_medecin_conseil_r0" model="hr.job">
+            <field name="code_fonction">MEDCO</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">MEDECIN CONSEIL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_operateur_de_saisie_r0" model="hr.job">
+            <field name="code_fonction">OPS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">OPERATEUR DE SAISIE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_operateur_de_systeme_r0" model="hr.job">
+            <field name="code_fonction">OPSY</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">OPERATEUR DE SYSTEME</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_ouvrier_r0" model="hr.job">
+            <field name="code_fonction">OUVR</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">OUVRIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_planton_r0" model="hr.job">
+            <field name="code_fonction">PL</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PLANTON</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_planton_encaisseur_r0" model="hr.job">
+            <field name="code_fonction">PLENC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PLANTON ENCAISSEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_classeur_r0" model="hr.job">
+            <field name="code_fonction">CL</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CLASSEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_comptable_r0" model="hr.job">
+            <field name="code_fonction">CPT</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">COMPTABLE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_controleur_de_gestion_r0" model="hr.job">
+            <field name="code_fonction">CTRGES</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CONTROLEUR DE GESTION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_controleur_interne_r0" model="hr.job">
+            <field name="code_fonction">CTRLI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CONTROLEUR INTERNE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_coursierclasseur_r0" model="hr.job">
+            <field name="code_fonction">COUCL</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">COURSIER/CLASSEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_dir_tech_adjt_r0" model="hr.job">
+            <field name="code_fonction">DTADJ</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DIR TECH ADJT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_directeur_r0" model="hr.job">
+            <field name="code_fonction">DIR</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DIRECTEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_directeur_dagence_r0" model="hr.job">
+            <field name="code_fonction">DAG</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DIRECTEUR D'AGENCE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_directeur_general_r0" model="hr.job">
+            <field name="code_fonction">DG</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DIRECTEUR GENERAL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_directeur_regional_r0" model="hr.job">
+            <field name="code_fonction">DR</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DIRECTEUR REGIONAL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_enqueteur_r0" model="hr.job">
+            <field name="code_fonction">ENQUET</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">ENQUETEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_femme_de_menage_r0" model="hr.job">
+            <field name="code_fonction">FM</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">FEMME DE MENAGE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_gardien_r0" model="hr.job">
+            <field name="code_fonction">GRD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">GARDIEN</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_gardien_chauffeur_r0" model="hr.job">
+            <field name="code_fonction">GRDCH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">GARDIEN CHAUFFEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_gestionnaire_admin_2_portefeui_r0" model="hr.job">
+            <field name="code_fonction">GAP</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">GESTIONNAIRE ADMIN 2 PORTEFEUI</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_guichetier_r0" model="hr.job">
+            <field name="code_fonction">GUI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">GUICHETIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_hotesse_daccueil_r0" model="hr.job">
+            <field name="code_fonction">HOTESS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">HOTESSE D'ACCUEIL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_infirmiere_r0" model="hr.job">
+            <field name="code_fonction">INF</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INFIRMIERE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_ingenieur_si_decisionnel_r0" model="hr.job">
+            <field name="code_fonction">ISID</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INGENIEUR SI DECISIONNEL</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_inspecteur_comptable_et_admin_r0" model="hr.job">
+            <field name="code_fonction">INSPCA</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INSPECTEUR COMPTABLE ET ADMIN</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_technicien_de_maintenance_r0" model="hr.job">
+            <field name="code_fonction">TMAINT</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">TECHNICIEN DE MAINTENANCE</field>
+            <field name="replacement" eval="True"/>
+        </record>
+        <record id="hr_job_technicien_de_support_r0" model="hr.job">
+            <field name="code_fonction">TSUPP</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">TECHNICIEN DE SUPPORT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_producteur_r0" model="hr.job">
+            <field name="code_fonction">PRO</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PRODUCTEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_producteur_automobile_r0" model="hr.job">
+            <field name="code_fonction">PROAU</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PRODUCTEUR AUTOMOBILE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_programmeur_r0" model="hr.job">
+            <field name="code_fonction">PRGRM</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PROGRAMMEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_protocole_r0" model="hr.job">
+            <field name="code_fonction">PROTOC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">PROTOCOLE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_quittancier_r0" model="hr.job">
+            <field name="code_fonction">QUITT</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">QUITTANCIER</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_redacteur_r0" model="hr.job">
+            <field name="code_fonction">RED</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">REDACTEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_redacteur_sinistres_sante_r0" model="hr.job">
+            <field name="code_fonction">REDSS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">REDACTEUR SINISTRES SANTE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_resp_prod_auto_des_sousag_r0" model="hr.job">
+            <field name="code_fonction">RESPAU</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RESP PROD AUTO DES SOUS-AG</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_responsable_r0" model="hr.job">
+            <field name="code_fonction">RESP</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RESPONSABLE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_responsable_du_recouvrement_r0" model="hr.job">
+            <field name="code_fonction">RESCOU</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RESPONSABLE DU RECOUVREMENT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_responsable_sce_recours_r0" model="hr.job">
+            <field name="code_fonction">RESREC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RESPONSABLE SCE RECOURS</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_responsable_vehicules_r0" model="hr.job">
+            <field name="code_fonction">RESVEH</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RESPONSABLE VEHICULES</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_roneographe_r0" model="hr.job">
+            <field name="code_fonction">RON</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">RONEOGRAPHE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_secretaire_r0" model="hr.job">
+            <field name="code_fonction">SEC</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">SECRETAIRE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_secretaire_caissiere_r0" model="hr.job">
+            <field name="code_fonction">SECCAI</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">SECRETAIRE CAISSIERE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_standardiste_r0" model="hr.job">
+            <field name="code_fonction">ST</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">STANDARDISTE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_cadre_dadministration_r0" model="hr.job">
+            <field name="code_fonction">CAD</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CADRE D'ADMINISTRATION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_charge_de_mission_r0" model="hr.job">
+            <field name="code_fonction">CDMISS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CHARGE DE MISSION</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_data_base_administrator_r0" model="hr.job">
+            <field name="code_fonction">DBA</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DATA BASE ADMINISTRATOR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_demissionnaire_r0" model="hr.job">
+            <field name="code_fonction">DEM</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DEMISSIONNAIRE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_dispacheur_r0" model="hr.job">
+            <field name="code_fonction">DISPA</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">DISPACHEUR</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_cadre_eros_r0" model="hr.job">
+            <field name="code_fonction">EROS</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">CADRE EROS</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_ingenieur_etude_et_dvpt_r0" model="hr.job">
+            <field name="code_fonction">IED</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">INGENIEUR ETUDE ET DVPT</field>
+            <field name="replacement" eval="False"/>
+        </record>
+        <record id="hr_job_stagiaire_r0" model="hr.job">
+            <field name="code_fonction">STAG</field>
+            <field name="alias_contact">everyone</field>
+            <field name="active" eval="True"/>
+            <field name="name">STAGIAIRE</field>
+            <field name="replacement" eval="False"/>
+        </record>
+    </data>
+</openerp>
