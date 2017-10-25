@@ -16,6 +16,7 @@
                             <h1>
                                 <field name="name"/>
                                 <field name="matricule"/>
+                                 <field name="visible"/>
                             </h1>
                             <label for="category_ids" class="oe_edit_only" groups="base.group_hr_user"/>
                             <field name="category_ids" widget="many2many_tags" placeholder="e.g. Part Time" groups="base.group_hr_user"/>
@@ -26,10 +27,10 @@
                             <label for="work_email" class="oe_edit_only"/>
                             <field name="work_email" widget="email"/>
                             <label for="work_phone" class="oe_edit_only"/>
-                            <field name="work_phone"/>
+                            <field name="work_phone"/>                           
                         </div>
                         <notebook colspan="4">
-                            <page string="Carrière" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Carrière" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field name="career_ids" colspan="4" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="date" colspan="4"/>
@@ -50,7 +51,7 @@
                                     </form>
                                 </field>
                             </page>
-                            <page string="Contrat" class="oe_page_contrat" accesskey="C" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Contrat" class="oe_page_contrat" accesskey="C" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field colspan="4" name="contract_ids" nolabel="1"  context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="name" />
@@ -62,7 +63,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Formation">
+                            <page string="Formation" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <label for="session_plan_formation_ids"/>
                                 <field name="session_plan_formation_ids">
                                     <tree>
@@ -73,7 +74,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="E-learning" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="E-learning" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <label for="session_elearning_ids"/>
                                 <field name="session_elearning_ids">
                                     <tree>
@@ -84,7 +85,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Diplômes" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Diplômes" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field name="diplome_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="ordre" colspan="4"/>
@@ -97,7 +98,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Sanctions" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Sanctions" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field colspan="4" name="sanction_ids" nolabel="1" context="{'default_name': active_id}">
                                     <tree>
                                         <field colspan="4" name="date" />
@@ -120,7 +121,7 @@
                                     </form>
                                 </field>
                             </page>
-                            <page string="Distinction" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Distinction" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field name="decoration_ids" colspan="4" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee"/>
@@ -128,7 +129,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Notations" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Notations" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field name="note_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee" />
@@ -137,7 +138,7 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Emplois antérieurs" groups="base.group_hr_manager,base.group_hr_user">
+                            <page string="Emplois antérieurs" groups="base.group_hr_manager,base.group_hr_user" attrs="{'invisible':[('visible','=',False)]}">
                                 <field name="lastjob_ids" nolabel="1" context="{'default_employee_id': active_id}">
                                     <tree>
                                         <field name="annee"/>
@@ -243,6 +244,20 @@
                     <field name="commentaires"/>
                     <field name="active"/>
                 </tree>
+            </field>
+        </record>
+
+        <!-- Vue recherche carrière -->
+
+        <record id="view_career_search" model="ir.ui.view">
+            <field name="name">hr.employee.search</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <search string="String">
+                    <!--filter string="name" icon="terp-gtk-media-pause" domain="[("field","=","value")]"/>
+                    <filter string="name" domain="[]" context="{"group_by" : "field"}" /-->
+                    <filter string="MonEquipe" domain="['|','|','|',('user_id', '=', uid), ('parent_id.user_id', '=', uid),('parent_id.parent_id.user_id','=',uid),('parent_id.parent_id.parent_id.user_id','=',uid)]" name="my_team_filter"/>
+                </search>
             </field>
         </record>
 
