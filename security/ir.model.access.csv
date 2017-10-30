@@ -1,4 +1,4 @@
-id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 #access_sanction_type,access_sanction_type,model_sanction_type,marketing.group_marketing_manager,1,0,0,0
 access_career_manager,access_career_manager,model_hr_employee_career,base.group_hr_user,1,0,0,0
 access_diplome_manager,access_diplome_manager,model_hr_employee_diplome,base.group_hr_user,1,0,0,0
