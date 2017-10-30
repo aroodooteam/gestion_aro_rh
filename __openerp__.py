@@ -29,7 +29,6 @@
                 Ajout de champs dans la table hr_department
                    """,
     'author': 'Solofo',
-    'website': 'http://www.aro.mg',
     'depends': ['base', 'hr', 'aro_hr'],
     'data': [
         'security/ir.model.access.csv',
