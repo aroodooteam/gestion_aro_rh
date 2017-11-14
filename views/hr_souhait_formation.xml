@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--?xml-stylesheet type ="texte/css" href="/gestion_aro_rh/static/src/css/style_career.css"?-->
 <openerp>
     <data>
         <!-- Vue form souhait de formation -->
@@ -9,9 +10,12 @@
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <form string="Souhait de formation" colspan="2">
-                    <group col="2" colspan="2">
-                        <!--field name="employee_id"/-->
+                <sheet>
+                    <h1>
                         <field name="name"/>
+                    </h1>
+                    <group col="2" colspan="2">
+                        <!--field name="employee_id"/-->                        
                         <field name="employee_department_id"/>
                         <field name="employee_job_id"/>
                         <field name="anciennete"/>
@@ -35,6 +39,7 @@
                                 </group>
                             </form>
                     </field>
+                </sheet>
                 </form>
             </field>
         </record>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--?xml-stylesheet type="texte/css" href="/gestion_aro_rh/static/src/css/style_career.css"?-->
+
+
+<openerp>
+    <data>
+        <report
+            id="hr_employee_diplome"
+            model="hr.employee"
+            string="Diplômes"
+            report_type="qweb-pdf"
+            name="gestion_aro_rh.hr_employee_report_diplome"
+            file="gestion_aro_rh.hr_employee_report_diplome"
+        />
+
+        <template id="hr_employee_report_diplome">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="report.external_layout">
+                        <div class ="page">
+                            <style type="text/css">
+                                [class*="col-"], footer {
+                                    border: 2px solid black;
+                                    border-radius: 6px;
+                                    line-height: 40px;
+                                }
+                                [class*="col-"] {
+                                font-size:9;
+                                }
+                                h3 {font-size: 32; color:red; font-weight: bold;}
+                                h5 {text-align: center;font-size: 26; font-weight: bold;}
+                            </style>
+                        	<!--h3 t-field ="doc.image_medium"/-->
+                            <!--div class="container">
+                                <div class ="row">
+                                    <div class = "col-xs-8 text-left"-->
+                            <h3 t-field="doc.name"/>
+                            <h4 t-field ="doc.matricule"/>
+                            <p><b>Fonction:</b> <span t-field="doc.job_id"/></p>
+                            <p><b>Service:</b> <span t-field="doc.department_id"/></p>
+                            <p><b>Grade:</b> <span t-field="doc.category_ids.name"/></p>
+                            <p><b>Né(e) le:</b> <span t-field="doc.birthday"/></p>
+                            <p><b>Embauché(e) le:</b> <span t-field="doc.date"/></p>
+                                    <!--/div>
+                                    <div class="col_xs_4 text-left">Photo à placer ici</div>
+                                </div>
+                            </div-->
+                            <h5>Diplômes:</h5>
+                            <ul>
+                                <div class ="container">
+                                    <div class="row">
+                                        <div>
+                                            <div class = "col-xs-1 text-left">Année</div>
+                                            <div class = "col-xs-3 text-left">Diplôme</div>
+                                            <div class = "col-xs-3 text-left">Branche</div>
+                                            <div class = "col-xs-2 text-left">Niveau</div>
+                                            <div class = "col-xs-3 text-left">Lieu</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <t t-foreach="doc.diplome_ids" t-as="diplome">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-1 text-left">
+                                                <span t-field="diplome.annee"/>
+                                            </div>
+                                            <div class="col-xs-3 text-left">
+                                                <span t-field = "diplome.diplome_id"/>
+                                            </div>
+                                            <div class="col-xs-3 text-left">
+                                                <span t-field="diplome.branche_id"/>
+                                            </div>
+                                            <div class="col-xs-2 text-left">
+                                                <span t-field="diplome.niveau_id"/>
+                                            </div>
+                                            <div class="col-xs-3 text-left">
+                                                <span t-field="diplome.lieu"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </ul>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>
+                          

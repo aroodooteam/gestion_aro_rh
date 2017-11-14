@@ -29,7 +29,8 @@
                 Ajout de champs dans la table hr_department
                    """,
     'author': 'Solofo',
-    'depends': ['base', 'hr', 'aro_hr'],
+    'website': 'http://www.aro.mg',
+    'depends': ['base', 'hr', 'aro_hr', 'report'],
     'data': [
         'security/ir.model.access.csv',
         'views/hr_department_inherit.xml',
@@ -61,9 +62,12 @@
         'data/hr_job_data.xml',
         'data/hr_employee_decoration_type_data.xml',
         'data/hr_holidays_status_data.xml',
+        'reports.xml',
+        'employee_qualification_report.xml',
+        'employee_distinction_report.xml',
     ],
 
-
+    "qweb": [],
     'installable': True,
     'auto_install': False,
     'application': False,
