@@ -5,15 +5,15 @@
 <openerp>
     <data>
         <report
-            id="hr_employee_diplome"
+            id="hr_employee_sanction"
             model="hr.employee"
-            string="Diplômes"
+            string="Mesures disciplinaires"
             report_type="qweb-pdf"
-            name="gestion_aro_rh.hr_employee_report_diplome"
-            file="gestion_aro_rh.hr_employee_report_diplome"
+            name="gestion_aro_rh.hr_employee_report_sanction"
+            file="gestion_aro_rh.hr_employee_report_sanction"
         />
 
-        <template id="hr_employee_report_diplome">
+        <template id="hr_employee_report_sanction">
             <t t-call="report.html_container">
                 <t t-foreach="docs" t-as="doc">
                     <t t-call="report.external_layout">
@@ -32,10 +32,10 @@
                                 h3 {font-size: 32; color:red; font-weight: bold;}
                                 h5 {text-align: center;font-size: 26; font-weight: bold;}
                             </style>
-                        	<div class="container">
+                            <div class="container">
                                 <div class ="row">
                                     <div class = "col-xs-8 text-left">
-                            <!--h2>
+                        	<!--h2>
                                 <img src="/gestion_aro_rh/static/img/employee_joel.jpg" style="max-height:45 px;"/>
                             </h2-->
                                         <h3 t-field="doc.name"/>
@@ -52,36 +52,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5>Diplômes:</h5>
+                            <h5>Carrière:</h5>
                             <ul>
                                 <div class ="container">
                                     <div class="row">
                                         <div>
-                                            <div class = "col-xs-1 text-left"><b>Année</b></div>
-                                            <div class = "col-xs-3 text-left"><b>Diplôme</b></div>
-                                            <div class = "col-xs-3 text-left"><b>Branche</b></div>
-                                            <div class = "col-xs-2 text-left"><b>Niveau</b></div>
-                                            <div class = "col-xs-3 text-left"><b>Lieu</b></div>
+                                            <div class = "col-xs-2 text-left"><b>Date</b></div>
+                                            <div class = "col-xs-3 text-left"><b>Sanction</b></div>
+                                            <div class = "col-xs-7 text-left"><b>Observations</b></div>
                                         </div>
                                     </div>
                                 </div>
-                                <t t-foreach="doc.diplome_ids" t-as="diplome">
+                                <t t-foreach="doc.sanction_ids" t-as="sanction">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-xs-1 text-left">
-                                                <span t-field="diplome.annee"/>
-                                            </div>
-                                            <div class="col-xs-3 text-left">
-                                                <span t-field = "diplome.diplome_id"/>
-                                            </div>
-                                            <div class="col-xs-3 text-left">
-                                                <span t-field="diplome.branche_id"/>
-                                            </div>
                                             <div class="col-xs-2 text-left">
-                                                <span t-field="diplome.niveau_id"/>
+                                                <span t-field="sanction.date"/>
                                             </div>
-                                            <div class="col-xs-3 text-left">
-                                                <span t-field="diplome.lieu"/>
+                                            <div class="col-xs-4 text-left">
+                                                <span t-field = "sanction.type"/>
+                                            </div>
+                                            <div class="col-xs-6 text-left">
+                                                <span t-field="sanction.description"/>
                                             </div>
                                         </div>
                                     </div>
@@ -94,4 +86,3 @@
         </template>
     </data>
 </openerp>
-                          

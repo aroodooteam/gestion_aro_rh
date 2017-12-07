@@ -18,40 +18,47 @@
                 <t t-foreach="docs" t-as="doc">
                     <t t-call="report.external_layout">
                         <div class ="page">
-                            <style type="text/css">
+                            <!--style type="text/css">
                                 [class*="col-"], footer {
                                     border: 2px solid black;
                                     border-radius: 6px;
                                     line-height: 40px;
                                 }
+                            </style-->
+                            <style type="text/css">
                                 [class*="col-"] {
-                                font-size:10;
+                                font-size:11;
                                 }
                                 h3 {font-size: 32; color:red; font-weight: bold;}
                                 h5 {text-align: center;font-size: 26; font-weight: bold;}
                             </style>
-                        	<!--h3 t-field ="doc.image_medium"/-->
-                            <!--div class="container">
+                        	<div class="container">
                                 <div class ="row">
-                                    <div class = "col-xs-8 text-left"-->
-                            <h3 t-field="doc.name"/>
-                            <h4 t-field ="doc.matricule"/>
-                            <p><b>Fonction:</b> <span t-field="doc.job_id"/></p>
-                            <p><b>Service:</b> <span t-field="doc.department_id"/></p>
-                            <p><b>Grade:</b> <span t-field="doc.category_ids.name"/></p>
-                            <p><b>Né(e) le:</b> <span t-field="doc.birthday"/></p>
-                            <p><b>Embauché(e) le:</b> <span t-field="doc.date"/></p>
-                                    <!--/div>
-                                    <div class="col_xs_4 text-left">Photo à placer ici</div>
+                                    <div class = "col-xs-8 text-left">
+                            <!--h2>
+                                <img src="/gestion_aro_rh/static/img/employee_joel.jpg" style="max-height:45 px;"/>
+                            </h2-->
+                                        <h3 t-field="doc.name"/>
+                                        <h4 t-field ="doc.matricule"/>
+                                        <p><b>Fonction:</b> <span t-field="doc.job_id"/></p>
+                                        <p><b>Service:</b> <span t-field="doc.department_id"/></p>
+                                        <p><b>Grade:</b> <span t-field="doc.category_ids.name"/></p>
+                                        <p><b>Né(e) le:</b> <span t-field="doc.birthday"/></p>
+                                        <p><b>Embauché(e) le:</b> <span t-field="doc.date"/></p>
+                                    </div>
+                                    <div class="col_xs_4 text-left">
+                                        <!--img src="/gestion_aro_rh/static/img/employee_joel.jpg" style="max-height:180 px;"/-->
+                                        <span t-field="doc.image_medium" t-field-options='{"widget": "image"}' style="max-height:180 px;"/>
+                                    </div>
                                 </div>
-                            </div-->
+                            </div>
                             <h5>Distinctions honorifiques:</h5>
                             <ul>
                                 <div class ="container">
                                     <div class="row">
                                         <div>
-                                            <div class = "col-xs-2 text-left">Année</div>
-                                            <div class = "col-xs-10 text-left">Distinctions honorifiques</div>
+                                            <div class = "col-xs-2 text-left"><b>Année</b></div>
+                                            <div class = "col-xs-10 text-left"><b>Distinctions honorifiques</b></div>
                                         </div>
                                     </div>
                                 </div>

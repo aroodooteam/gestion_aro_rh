@@ -63,8 +63,13 @@
         'data/hr_employee_decoration_type_data.xml',
         'data/hr_holidays_status_data.xml',
         'reports.xml',
+        'employee_contract_report.xml',
         'employee_qualification_report.xml',
+        'employee_formation_report.xml',
         'employee_distinction_report.xml',
+        'employee_sanction_report.xml',
+        'employee_notation_report.xml',
+        'employee_last_job_report.xml',
     ],
 
     "qweb": [],
