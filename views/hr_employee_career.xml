@@ -11,7 +11,7 @@
             <field name="arch" type="xml">
                 <form string="Career">
                     <header>
-                      <button name="%(gestion_aro_rh.hr_employee_career)d" type="action" string="Imprimer" icon="gtk-print"/>
+                        <!--<button name="%(gestion_aro_rh.hr_employee_career)d" type="action" string="Imprimer" icon="gtk-print"/>-->
                     </header>
                     <sheet>
                     <field name="image_medium" widget='image' class="oe_left oe_avatar"/>
