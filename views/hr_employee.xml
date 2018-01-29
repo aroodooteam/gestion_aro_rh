@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="view_employee_filter_inherit" model="ir.ui.view">
+             <field name="name">update.hr.view.employee.filter</field>
+             <field name="model">hr.employee</field>
+             <field name="inherit_id" ref="hr.view_employee_filter"/>
+             <field name="priority" eval="16"/>
+             <field name="arch" type="xml">
+             	<search string="Employees">
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Actif" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactif" domain="[('active','=',False)]" />
+                </search>
+             </field>
+        </record>
+    </data>
+</openerp>
