@@ -14,3 +14,6 @@ class hrEmployee(models.Model):
     session_plan_formation_ids = fields.Many2many('hr.session.plan',string='Session de formation')
     session_elearning_ids = fields.Many2many('hr.session.elearning',string=u'E-learning')
     diplome_ids = fields.One2many('hr.employee.diplome','employee_id',string=u'Diplômes')
+    job_ids = fields.One2many('hr.employee.job.history','employee_id', string='Fonction')
+    department_ids = fields.One2many('hr.employee.department.history','employee_id',string='Service')
+    grade_ids = fields.One2many('hr.employee.grade.history','employee_id', string='Grade')

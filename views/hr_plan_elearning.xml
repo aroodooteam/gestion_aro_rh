@@ -102,7 +102,7 @@
 
         <!-- Menu Plan Elearning -->
 
-        <menuitem id="menu_action_gestion_elearning_2" name="e-learning" parent="menu_hr_elearning_root" action="action_gestion_elearning_2"/>
+        <menuitem id="menu_action_gestion_elearning_2" name="e-learning" parent="menu_hr_elearning_root" action="action_gestion_elearning_2" sequence="5"/>
 
     </data>
 </openerp>

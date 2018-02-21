@@ -65,10 +65,8 @@
         </record>
 
         <!-- Menu session elearning -->
-        <menuitem id="menu_action_gestion_session_elearning" name="Session e-learning" parent="menu_hr_elearning_root" action="action_gestion_session_elearning"/>
-
-
-
-
+        <menuitem id="menu_action_gestion_session_elearning" name="Session e-learning" parent="menu_hr_elearning_root"
+                  action="action_gestion_session_elearning"
+                  sequence="10"/>
     </data>
  </openerp>
