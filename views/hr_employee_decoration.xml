@@ -44,8 +44,8 @@
         </record>
 
         <menuitem id="menu_action_gestion_decoration"
-                  name="Saisie décoration"
-                  parent="menu_hr_career_root"
+                  name="Distinction honorifique"
+                  parent="menu_hr_saisie_en_lot"
                   groups="base.group_hr_manager"
                   action="action_gestion_decoration"/>
 

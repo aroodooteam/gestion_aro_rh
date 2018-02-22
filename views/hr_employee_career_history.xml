@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--?xml-stylesheet type ="texte/css" href="style_career.css"?-->
+<openerp>
+    <data>
+
+        <!--Vue Form Grade -->
+
+        <record id="view_grade_form" model="ir.ui.view">
+            <field name="name">hr.employee.grade.form</field>
+            <field name="model">hr.employee.grade.history</field>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <form string="grade">
+                	<sheet>
+                        <h1>
+                            <label string="Grade"/>
+                        </h1>
+                		<group col="2" colspan="4">
+                			<field name="matricule"/>
+                        	<field name="employee_id"/>
+                        	<field name="date"/>
+                        	<field name="category_ids"/>
+                        	<field name="commentaires"/>
+                    	</group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vue tree grade -->
+        <record model='ir.ui.view' id='view_grade_tree'>
+            <field name='name'>view_grade.tree</field>
+            <field name='model'>hr.employee.grade.history</field>
+            <field name='arch' type='xml'>
+                <tree string='Grade'>
+                	<field name="matricule"/>
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="category_ids"/>
+                    <field name="commentaires"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action du menu hr.employee.grade.history-->
+        <record id="action_gestion_grade" model="ir.actions.act_window">
+            <field name="name">Grade</field>
+            <field name="res_model">hr.employee.grade.history</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_gestion_grade"
+                  name="Grade"
+                  parent="menu_hr_saisie_en_lot"
+                  groups="base.group_hr_manager"
+                  action="action_gestion_grade"/>
+
+        <!--Vue Form Fonction -->
+
+        <record id="view_job_form" model="ir.ui.view">
+            <field name="name">hr.employee.job.form</field>
+            <field name="model">hr.employee.job.history</field>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <form string="Fonction">
+                	<sheet>
+                        <h1>
+                            <label string="Fonction"/>
+                        </h1>
+                        <group col="2" colspan="4">
+                            <field name="matricule"/>
+                            <field name="employee_id"/>
+                            <field name="date"/>
+                            <field name="job_id"/>
+                            <field name="commentaires"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vue tree Fonction -->
+
+        <record model='ir.ui.view' id='view_job_tree'>
+            <field name='name'>view_job.tree</field>
+            <field name='model'>hr.employee.job.history</field>
+            <field name='arch' type='xml'>
+                <tree string='Fonction'>
+                	<field name="matricule"/>
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="job_id"/>
+                    <field name="commentaires"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action du menu hr.employee.job.history-->
+        <record id="action_gestion_job" model="ir.actions.act_window">
+            <field name="name">Job</field>
+            <field name="res_model">hr.employee.job.history</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_gestion_job"
+                  name="Fonction"
+                  parent="menu_hr_saisie_en_lot"
+                  groups="base.group_hr_manager"
+                  action="action_gestion_job"/>
+
+        <!-- Vue form department -->
+        <record id="view_department_form" model="ir.ui.view">
+            <field name="name">hr.employee.department.form</field>
+            <field name="model">hr.employee.department.history</field>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <form string="Affectation">
+                	<sheet>
+                        <h1>
+                            <label string="Affectation"/>
+                        </h1>
+                        <group col="2" colspan="4">
+                        	<field name="matricule"/>
+                            <field name="employee_id"/>
+                            <field name="date"/>
+                            <field name="department_id"/>
+                            <field name="commentaires"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vue tree department -->
+        <record model='ir.ui.view' id='view_department_tree'>
+            <field name='name'>view.department.tree</field>
+            <field name='model'>hr.employee.department.history</field>
+            <field name='arch' type='xml'>
+                <tree string='Department' editable="top">
+                	<field name="matricule"/>
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="department_id"/>
+                    <field name="commentaires"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action du menu hr.employee.department.history-->
+        <record id="action_gestion_department" model="ir.actions.act_window">
+            <field name="name">Department</field>
+            <field name="res_model">hr.employee.department.history</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_gestion_department"
+                  name="Affectation"
+                  parent="menu_hr_saisie_en_lot"
+                  groups="base.group_hr_manager"
+                  action="action_gestion_department"/>
+
+    </data>
+</openerp>

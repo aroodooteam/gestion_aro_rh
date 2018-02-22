@@ -10,6 +10,13 @@
             groups="base.group_hr_manager,base.group_hr_user,base.group_user"
             sequence ="1"/>
 
+        <!-- Menu Saisie en Lot -->
+
+        <menuitem
+            id="menu_hr_saisie_en_lot"
+            name="Saisie en lot"
+            parent="menu_hr_career_root"/>
+
         <menuitem
             id="menu_hr_formation_root"
             name="Gestion de la formation"

@@ -338,12 +338,12 @@
         </record>
 
 
-        <menuitem id="menu_action_saisie_career"
+        <!--menuitem id="menu_action_saisie_career"
                   name="Saisie Carrière"
                   parent="menu_hr_career_root"
                   action="action_saisie_career"
                   sequence="2"
-                  groups="base.group_hr_manager"/>
+                  groups="base.group_hr_manager"/-->
         <menuitem id="menu_action_gestion_career" name="Carrière" parent="menu_hr_career_root" action="action_gestion_career" sequence="1"/>
         
     </data>

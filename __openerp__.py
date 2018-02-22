@@ -58,6 +58,7 @@
         'views/hr_employee_last_job_view.xml',
         'views/hr_niveau_etudes.xml',
         'views/hr_employee.xml',
+        'views/hr_employee_career_history.xml',
         'data/hr_employee_category_data.xml',
         'data/sanction_type_data.xml',
         'data/hr_department_data.xml',
