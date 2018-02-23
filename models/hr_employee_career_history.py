@@ -6,7 +6,7 @@ from openerp import api, exceptions, fields, models, _
 class HrEmployeeJobHistory(models.Model):
     _name = 'hr.employee.job.history'
     _description = 'Suivi des changements de fonction'
-    _order = "date asc"
+    _order = 'employee_id desc,date asc'
 
     matricule = fields.Char(related="employee_id.matricule",string='Matricule',readonly=True,size=50)
     employee_id = fields.Many2one('hr.employee', string='Employee')
@@ -17,7 +17,7 @@ class HrEmployeeJobHistory(models.Model):
 class HrEmployeeDepartmentHistory(models.Model):
     _name = 'hr.employee.department.history'
     _description = 'Suivi des changements de service'
-    _order = "date asc"
+    _order = 'employee_id desc,date asc'
 
     employee_id = fields.Many2one('hr.employee', string='Employee')
     matricule = fields.Char(related="employee_id.matricule",string='Matricule',readonly=True,size=50)
@@ -37,4 +37,4 @@ class HrEmployeeGradeHistory(models.Model):
     category_ids = fields.Many2one('hr.employee.category', string='Grade')
     commentaires = fields.Char(string='Commentaires')
 
-    #_sql_constraints = [('name_grade_uniq', 'unique(employee_id,category_ids )', _(u'Vous avez déja saisi les avantages de cet employé !'))]
+    _sql_constraints = [('name_grade_uniq', 'unique(employee_id,category_ids )', _(u'Vous avez déja saisi ce grade!'))]

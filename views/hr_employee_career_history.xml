@@ -42,12 +42,30 @@
             </field>
         </record>
 
+        <!-- Vue recherche grade -->
+
+        <record id="view_grade_search" model="ir.ui.view">
+            <field name="name">hr.employee.grade.history.search</field>
+            <field name="model">hr.employee.grade.history</field>
+            <field name="arch" type="xml">
+                <search string="String">
+                    <field name="matricule"/>
+                    <field name="employee_id"/>
+                    <!--field name="category_ids"/-->
+                        <!--group string="Group By…">
+                        <filter string="Grade" name="group_grade" icon="terp-personal" domain="[]"
+                            context="{'group_by':'category_ids'}"/>
+                        </group-->
+                </search>
+            </field>
+        </record>
+
         <!-- Action du menu hr.employee.grade.history-->
         <record id="action_gestion_grade" model="ir.actions.act_window">
             <field name="name">Grade</field>
             <field name="res_model">hr.employee.grade.history</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
         </record>
 
         <menuitem id="menu_action_gestion_grade"
@@ -96,12 +114,30 @@
             </field>
         </record>
 
+        <!-- Vue recherche Fonction -->
+
+        <record id="view_fonction_search" model="ir.ui.view">
+            <field name="name">hr.employee.job.history.search</field>
+            <field name="model">hr.employee.job.history</field>
+            <field name="arch" type="xml">
+                <search string="String">
+                    <field name="matricule"/>
+                    <field name="employee_id"/>
+                    <!--field name="category_ids"/-->
+                        <!--group string="Group By…">
+                        <filter string="Grade" name="group_grade" icon="terp-personal" domain="[]"
+                            context="{'group_by':'category_ids'}"/>
+                        </group-->
+                </search>
+            </field>
+        </record>
+
         <!-- Action du menu hr.employee.job.history-->
         <record id="action_gestion_job" model="ir.actions.act_window">
             <field name="name">Job</field>
             <field name="res_model">hr.employee.job.history</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
         </record>
 
         <menuitem id="menu_action_gestion_job"
@@ -148,12 +184,25 @@
             </field>
         </record>
 
+        <!-- Vue recherche department -->
+
+        <record id="view_department_search" model="ir.ui.view">
+            <field name="name">hr.employee.department.history.search</field>
+            <field name="model">hr.employee.department.history</field>
+            <field name="arch" type="xml">
+                <search string="String">
+                    <field name="matricule"/>
+                    <field name="employee_id"/>
+                </search>
+            </field>
+        </record>
+
         <!-- Action du menu hr.employee.department.history-->
         <record id="action_gestion_department" model="ir.actions.act_window">
             <field name="name">Department</field>
             <field name="res_model">hr.employee.department.history</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
         </record>
 
         <menuitem id="menu_action_gestion_department"

@@ -38,3 +38,5 @@ class HrDepartment(models.Model):
     compte_agence = fields.Char('Compte Agence', size=8)
     service_param_paye = fields.Char(string='Service Param Paye', size=8)
     active = fields.Boolean(string='Active', default=True)
+
+    #_sql_constraints = [('name_code_uniq', 'unique(code_service)', _(u'Ce code service a déja été attribué!'))]
