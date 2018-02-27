@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
+    <data noupdate="1">
         <record id="hr_employee_decoration_type_medaille_dargent_r0" model="hr.employee.decoration.type">
             <field name="code">ARG</field>
             <field name="name">MEDAILLE D'ARGENT</field>

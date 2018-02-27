@@ -52,6 +52,7 @@
                                             <field name="date_fin_session"/>
                                             <field name="session_place"/>
                                             <field name="instructor_id"/>
+                                            <field name="cout_session"/>
                                         </tree>
                                         <form>
                                             <group col="2" colspan="4">
@@ -65,6 +66,8 @@
                                                 <field name="date_session"/>
                                                 <field name="date_fin_session"/>
                                                 <field name="session_place"/>
+                                                <field name="duree_session"/>
+                                                <field name="cout_session"/>
                                                 <field name="instructor_id"/>
                                             </group>
                                         </form>

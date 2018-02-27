@@ -19,5 +19,14 @@ class HrSessionPlan(models.Model):
     plan_formation_branche_id = fields.Char(related='plan_formation_id.branche_id.name', readonly=True,string='Branche')
     plan_formation_module_id = fields.Char(related='plan_formation_id.module_id.name', readonly=True,string='Module')
     date_fin_session = fields.Date(string='Date Fin')
-    cout_session = fields.Float(string=u'Coût total',digits=(10, 2))
+    cout_session = fields.Float(string=u'Coût',digits=(10, 2))
     observations = fields.Text(string='Observations')
+    duree_session = fields.Float(string=u'Durée en heure',digits=(6,2))
+
+    @api.constrains('date_session')
+    def check_date_session(self):
+        for session in self:
+            if session.date_session > session.date_fin_session:
+                raise exceptions.ValidationError(u"Les dates de votre session ne sont pas cohérentes, merci de vérifier")
+
+

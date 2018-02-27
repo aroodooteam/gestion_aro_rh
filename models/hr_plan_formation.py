@@ -19,7 +19,7 @@ class HrPlanFormation(models.Model):
     besoin_accorde = fields.Integer(string=u'Besoin accordé')
     beneficiaire = fields.Integer(string=u'Bénéficiaire')
     taken_seats=fields.Float( string='Taux', digits=(4, 2), compute="_taken_seats_2")
-    cout = fields.Float(string=u'Coût total', digits=(6, 2))
+    cout = fields.Float(string=u'Coût engagé', digits=(6, 2),compute='get_total_cost')
     test_besoin = fields.Char(string='Besoin Test')
     session_plan_ids = fields.One2many('hr.session.plan', 'plan_formation_id', string='session')
     observations = fields.Text(string='Observations')
@@ -45,3 +45,15 @@ class HrPlanFormation(models.Model):
             r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.branche_id.name + '] '+''+'[' + el_obj.module_id.name + ']'
             res.append((el_obj.id,  r_name))
         return res
+
+    @api.multi
+    def get_total_cost(self):
+        for cost in self:
+            session_plan=len(cost.session_plan_ids)
+            count=0
+            i=0
+            while i < session_plan:
+                for session_cost in  cost.session_plan_ids:
+                    count=count+session_cost.cout_session
+                    i=i+1
+                    cost.cout=count

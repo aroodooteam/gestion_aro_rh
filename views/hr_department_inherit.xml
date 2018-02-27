@@ -44,7 +44,9 @@
                     <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
                     <filter name="filter_see_active" string="Active" domain="[('active','=',True)]"/>
                     <filter name="filter_see_inactive" string="Inactive" domain="[('active','=',False)]" />
+                    <field name="code_service"/>
                 </search>
+
             </field>
         </record>
 

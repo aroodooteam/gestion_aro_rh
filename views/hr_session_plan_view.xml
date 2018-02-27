@@ -17,6 +17,8 @@
                             <field name="plan_formation_module_id"/>
                             <field name="date_session"/>
                             <field name="date_fin_session"/>
+                            <field name="duree_session"/>
+                            <field name="cout_session"/>
                     </group>
                     <separator string="Participants" colspan="2"/>
                         <label for="attendee_ids"/>
