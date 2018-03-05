@@ -10,7 +10,7 @@ class HrSessionPlan(models.Model):
     objectif_id = fields.Many2one('hr.formation.objectif',string='Objectif')
     branche_id = fields.Many2one('hr.employee.branche',string='Branche')
     module_id= fields.Many2one('hr.employee.formation.module',string='Module')
-    specificite_id = fields.Many2one('hr.employee.module.specificite',string=u'Spécicité')
+    specificite_id = fields.Many2one('hr.employee.module.specificite',string=u'Spécificité')
     date_session = fields.Date(string=u'Date Début')
     session_place = fields.Char(string='Lieu')
     instructor_id = fields.Many2one('hr.formation.instructor',string='Animateur')
