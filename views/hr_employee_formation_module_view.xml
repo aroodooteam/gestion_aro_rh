@@ -9,12 +9,24 @@
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <form string="Module">
-                    <group col="2" colspan="4">
-                        <field name="code"/>
-                        <field name="name"/>
-                        <field name="branche_id"/>
-                        <field name="specialite"/>
-                    </group>
+                    <sheet>
+                        <h1>
+                             <label string="Module"/>
+                        </h1>
+                        <group col="2" colspan="4">
+                            <field name="branche_id"/>
+                        </group>
+                        <group col="4" colspan="4">
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="specificite_ids" colspan="4" nolabel="1" context="{'default_module_id': active_id}">
+                                    <tree editable="top">
+                                        <field name="name" colspan="4"/>
+                                    </tree>
+                            </field>
+                        </group>
+                    </sheet>
                 </form>
             </field>
         </record>
@@ -31,8 +43,26 @@
                     <!--field name="code"/-->
                     <field name="name"/>
                     <field name="branche_id"/>
-                    <field name="specialite"/>
+                    <!--field name="specialite"/-->
                 </tree>
+            </field>
+        </record>
+
+        <!-- Vue Recherche Module -->
+        <record id="view_formation_module_search" model="ir.ui.view">
+            <field name="name">hr.employee.formation.module.search</field>
+            <field name="model">hr.employee.formation.module</field>
+            <field name="arch" type="xml">
+                <search string="Departments">
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Active" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactive" domain="[('active','=',False)]" />
+                    <filter string="Branche" name="group_branche" icon="terp-personal" domain="[]"
+                        context="{'group_by':'branche_id'}"/>
+                    <field name="name"/>
+                    <field name="branche_id"/>
+                </search>
+
             </field>
         </record>
 
@@ -49,6 +79,6 @@
             </field>
         </record>
 
-        <menuitem id="menu_action_gestion_module" name="Gérer les modules" parent="menu_hr_formation_root" action="action_gestion_module"/>
+        <menuitem id="menu_action_gestion_module" name="Modules" parent="menu_hr_foramtion_module_root" action="action_gestion_module"/>
     </data>
 </openerp>

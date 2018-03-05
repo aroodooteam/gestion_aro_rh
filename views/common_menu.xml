@@ -48,5 +48,12 @@
             parent="menu_hr_formation_root"
             sequence="6"/>
 
+        <menuitem
+            id="menu_hr_foramtion_module_root"
+            name="Gérer les modules"
+            parent="menu_hr_formation_root"
+            sequence="7"/>
+
+
     </data>
 </openerp>

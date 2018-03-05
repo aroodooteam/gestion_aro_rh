@@ -21,7 +21,7 @@
                                 <separator string ="Général" colspan="2"/>
                                     <field name="objectif_id"/>
                                     <field name="branche_id"/>
-                                    <field name="module_id"/>
+                                    <field name="module_id" context="{'default_branche_id': active_id}"/>
                             </group>
                             <group col="4" colspan="2">
                                 <separator string ="Prévision" colspan="4"/>

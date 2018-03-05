@@ -25,6 +25,8 @@ class HrPlanFormation(models.Model):
     observations = fields.Text(string='Observations')
     code_plan = fields.Char(string='Code plan')
 
+    _order = "name asc"
+
     # compute field
     @api.depends ('beneficiaire', 'besoin_accorde')
     def _taken_seats_2(self):
@@ -57,3 +59,9 @@ class HrPlanFormation(models.Model):
                     count=count+session_cost.cout_session
                     i=i+1
                     cost.cout=count
+    
+    @api.constrains('date_start','date_end')
+    def check_date_plan(self):
+        for plan in self:
+            if plan.date_start > plan.date_end:
+                raise exceptions.ValidationError(u"Les dates de vos prévisions ne sont pas cohérentes, merci de vérifier")

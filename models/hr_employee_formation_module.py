@@ -9,3 +9,5 @@ class hrEmployeeFormationModule(models.Model):
 
     branche_id = fields.Many2one('hr.employee.branche', string='Branche')
     specialite = fields.Char(string=u'Spécialité')
+    specificite_ids = fields.One2many('hr.employee.module.specificite','module_id', string=u'Spécificité')
+    active = fields.Boolean(string='Actif',default=True)

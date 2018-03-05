@@ -45,10 +45,37 @@
                 <tree string="Module">
                     <field name="plan_formation_id"/>
                     <field name="date_session"/>
+                    <field name="date_fin_session"/>
+                    <field name="duree_session"/>
                     <field name="plan_formation_objectif_id"/>
                     <field name="plan_formation_branche_id"/>
                     <field name="plan_formation_module_id"/>
                 </tree>
+            </field>
+        </record>
+
+        <!-- Vue Recherche Plan de Formation 3 -->
+
+        <record id="view_session_plan_search" model="ir.ui.view">
+            <field name="name">hr.session.plan.search</field>
+            <field name="model">hr.session.plan</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Formation">
+                    <field name="plan_formation_id"/>
+                    <field name="plan_formation_module_id"/>
+                    <field name="plan_formation_objectif_id"/>
+                    <field name="date_session" string="Date Début" filter_domain="[('date_session', '&gt;=', self)]" />
+                    <field name="date_fin_session" string="Date Fin" filter_domain="[('date_fin_session', '&lt;=', self)]" />
+                    <!--field name="branche_id"/>
+                    <field name="module_id"/>
+                        <group string="Group By…">
+                        <filter string="Plan" name="group_plan" icon="terp-personal" domain="[]"
+                            context="{'group_by':'name'}"/>
+                        <filter string="Objectif" name="group_objectif" icon="terp-personal" domain="[]"
+                            context="{'group_by':'objectif_id'}"/>
+                        </group-->
+                </search>
             </field>
         </record>
 
@@ -57,7 +84,7 @@
             <field name="name">Session</field>
             <field name="res_model">hr.session.plan</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
                     Créer une nouvelle session de formation

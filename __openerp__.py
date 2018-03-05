@@ -44,7 +44,7 @@
         'views/sanction_type_view.xml',
         'views/hr_employee_sanction_view.xml',
         'views/qual_type_view.xml',
-        #'views/hr_plan_formation_version_2_view.xml',
+        'views/hr_employee_module_specificite_view.xml',
         #'views/hr_session_formation_version_2_view.xml',
         'views/hr_plan_formation_view.xml',
         'views/hr_session_plan_view.xml',

@@ -23,7 +23,9 @@ class HrSessionPlan(models.Model):
     observations = fields.Text(string='Observations')
     duree_session = fields.Float(string=u'Durée en heure',digits=(6,2))
 
-    @api.constrains('date_session')
+    _order = "date_session asc"
+
+    @api.constrains('date_session','date_fin_session')
     def check_date_session(self):
         for session in self:
             if session.date_session > session.date_fin_session:

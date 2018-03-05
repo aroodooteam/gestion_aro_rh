@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+    	<!-- Vue form specificite -->
+        <record id="view_module_specificite_form" model="ir.ui.view">
+            <field name="name">hr.employee.module.specificite.form</field>
+            <field name="model">hr.employee.module.specificite</field>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <form string="Module">
+                    <group col="2" colspan="4">
+                        <field name="module_id"/>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vue tree specificite -->
+
+        <record id="view_module_specificite_tree" model="ir.ui.view">
+            <field name="name">hr.employee.module.specificite.tree</field>
+            <field name="model">hr.employee.module.specificite</field>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <tree string="Module">
+                    <!--field name="code"/-->
+                    <field name="module_id"/>
+                        <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vue Recherche specificite -->
+
+        <record id="hr_employee_module_specificite_search" model="ir.ui.view">
+            <field name="name">hr.employee.module.specificite.search</field>
+            <field name="model">hr.employee.module.specificite</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Spécificité">
+                    <field name="module_id"/>
+                    <field name="name"/>
+                        <group string="Group By…">
+                        	<filter string="Module" name="group_module_id" icon="terp-personal" domain="[]"
+                            context="{'group_by':'module_id'}"/>
+                        </group>
+                </search>
+            </field>
+        </record>
+
+
+
+
+        <!--Action du menu specificite -->
+        <record model="ir.actions.act_window" id="action_gestion_specificite">
+            <field name="name">Specificite</field>
+            <field name="res_model">hr.employee.module.specificite</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Créer une nouvelle spécificité
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_action_gestion_specificite" name="Spécificité" parent="menu_hr_foramtion_module_root" action="action_gestion_specificite"/>
+
+
+
+    </data>
+</openerp>

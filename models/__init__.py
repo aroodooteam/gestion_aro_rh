@@ -43,3 +43,5 @@ import hr_session_elearning
 import hr_plan_elearning
 import hr_employee_diplome
 import hr_employee_career_history
+import hr_employee_module_specificite
+import hr_employee_branche
