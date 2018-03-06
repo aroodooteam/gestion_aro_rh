@@ -20,7 +20,8 @@
                                 <field name="plan_formation_objectif_id"/>
                                 <field name="plan_formation_branche_id"/>
                                 <field name="plan_formation_module_id"/>
-                                <field name="specificite_id"/>
+                                <field name="specificite_id" domain="[('module_id','=',plan_formation_module_id)]"/>
+                                <field name="observations"/>
                             <separator string="Chronogramme" colspan="2"/>
                                 <field name="date_session"/>
                                 <field name="date_fin_session"/>
