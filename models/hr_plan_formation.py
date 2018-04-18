@@ -24,6 +24,7 @@ class HrPlanFormation(models.Model):
     session_plan_ids = fields.One2many('hr.session.plan', 'plan_formation_id', string='session')
     observations = fields.Text(string='Observations')
     code_plan = fields.Char(string='Code plan')
+    active = fields.Boolean(string='Actif', default=True)
 
     _order = "name asc"
 

@@ -2,8 +2,6 @@
 <openerp>
     <data>
 
-
-
         <!-- Vue form branche -->
         <record id="view_branche_form" model="ir.ui.view">
             <field name="name">hr.branche.form</field>
@@ -12,7 +10,7 @@
             <field name="arch" type="xml">
                 <form string="Branche">
                     <group col="4" colspan="4">
-                        <field name="code"/>
+                        <!--field name="code"/-->
                         <field name="name"/>
                         <field name="active"/>
                         <field name="module_ids" colspan="4" nolabel="1">
@@ -32,9 +30,23 @@
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <tree string="Branche">
-                    <field name="code"/>
+                    <!--field name="code"/-->
                     <field name="name"/>
                 </tree>
+            </field>
+        </record>
+
+        <!-- Vue Recherche Branche -->
+        <record id="view_formation_branche_search" model="ir.ui.view">
+            <field name="name">hr.employee.branche.search</field>
+            <field name="model">hr.employee.branche</field>
+            <field name="arch" type="xml">
+                <search string="Branche">
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Active" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactive" domain="[('active','=',False)]" />
+                    <field name="name"/>
+                </search>
             </field>
         </record>
 
@@ -43,7 +55,7 @@
             <field name="name">Branche</field>
             <field name="res_model">hr.employee.branche</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
                     Créer une nouvelle branche.

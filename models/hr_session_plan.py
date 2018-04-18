@@ -25,6 +25,7 @@ class HrSessionPlan(models.Model):
     cout_session = fields.Float(string=u'Coût',digits=(10, 2))
     observations = fields.Text(string='Observations')
     duree_session = fields.Float(string=u'Durée en heure',digits=(6,2))
+    active = fields.Boolean(string='Actif', default=True)
 
     _order = "date_session asc"
 

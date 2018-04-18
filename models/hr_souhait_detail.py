@@ -7,8 +7,10 @@ class hrSouhaitDetail(models.Model):
 
     employee_id=fields.Many2one('hr.souhait.formation', string=u'Employé', readonly=True)
     competence = fields.Text(string=u'Compétence recherchée')
-    formation_souhaitee = fields.Text(string=u'Formation souhaitée')
+    #formation_souhaitee = fields.Text(string=u'Formation souhaitée')
+    module_id = fields.Many2one('hr.employee.formation.module',string=u'Formation souhaitée')
     date_envisagee=fields.Char(string=u'Période indicative')
     duree= fields.Char(string=u'Durée indicative')
     animateur=fields.Char(string='Animateur')
     avis_superieur=fields.Text(string=u'Avis du supérieur hiérarchique')
+    state = fields.Boolean(string='Demande satisfaite', default=False)

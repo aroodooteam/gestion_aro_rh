@@ -6,7 +6,8 @@ from openerp import api, exceptions, fields, models, _
 class hrSouhaitFormation(models.Model):
     _name = 'hr.souhait.formation'
 
-    employee_id= fields.Many2one('hr.employee', string='Nom du demandeur')
+    #employee_id= fields.Many2one('hr.employee', string='Nom du demandeur')
+    annee = fields.Integer(string=u'Année')
     name= fields.Many2one('hr.employee', string='Nom du demandeur')
     employee_department_id = fields.Char(related='name.department_id.name', readonly=True, string=u'Unité')
     employee_job_id = fields.Char(related='name.job_id.name', readonly=True, string='Fonction')

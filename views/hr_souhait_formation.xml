@@ -12,29 +12,33 @@
                 <form string="Souhait de formation" colspan="2">
                 <sheet>
                     <h1>
-                        <field name="name"/>
+                        <label string="Souhait de formation"/>
                     </h1>
                     <group col="2" colspan="2">
-                        <!--field name="employee_id"/-->                        
-                        <field name="employee_department_id"/>
-                        <field name="employee_job_id"/>
-                        <field name="anciennete"/>
+                        <field name="annee"/>
+                        <separator string="Demandeur" colspan="2"/>
+                            <field name="name"/>
+                            <field name="employee_department_id"/>
+                            <field name="employee_job_id"/>
+                            <field name="anciennete"/>
                     </group>
                     <field name="souhait_detail_ids" nolabel="1" context="{'default_employee_id': active_id}">
                         <tree>
                             <!--field name="employee_id"/-->
                             <field name="competence"/>
-                            <field name="formation_souhaitee"/>
+                            <field name="module_id"/>
                             <field name="date_envisagee"/>
+                            <field name="state"/>
                         </tree>
                             <form>
                                 <group col="2" colspan="4">
                                     <field name="employee_id"/>
                                     <field name="competence"/>
-                                    <field name="formation_souhaitee"/>
+                                    <field name="module_id"/>
                                     <field name="date_envisagee"/>
                                     <field name="duree"/>
                                     <field name="animateur"/>
+                                    <field name="state"/>
                                     <field name="avis_superieur"/>
                                 </group>
                             </form>
@@ -52,7 +56,7 @@
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <tree string="Souhait de formation">
-                    <!--field name="employee_id"/-->
+                    <field name="annee"/>
                     <field name="name"/>
                     <field name="employee_department_id"/>
                     <field name="employee_job_id"/>

@@ -22,6 +22,7 @@
                                     <field name="objectif_id"/>
                                     <field name="branche_id"/>
                                     <field name="module_id" domain="[('branche_id','=',branche_id)]"/>
+                                    <field name="active"/>
                             </group>
                             <group col="4" colspan="2">
                                 <separator string ="Prévision" colspan="4"/>
@@ -50,6 +51,7 @@
                                             <field name="module_id"/-->
                                             <field name="date_session"/>
                                             <field name="date_fin_session"/>
+                                            <field name="specificite_id"/>
                                             <field name="session_place"/>
                                             <field name="instructor_id"/>
                                             <field name="cout_session"/>
@@ -61,8 +63,8 @@
                                                 <field name="plan_formation_objectif_id"/>
                                                 <field name="plan_formation_branche_id"/>
                                                 <field name="plan_formation_module_id"/>
-                                                <!--field name="branche_id"/>
-                                                <field name="module_id"/-->
+                                                <field name="specificite_id" domain="[('module_id','=',plan_formation_module_id)]"/>
+                                                <field name="observations"/>
                                                 <field name="date_session"/>
                                                 <field name="date_fin_session"/>
                                                 <field name="session_place"/>
@@ -120,6 +122,9 @@
                         <filter string="Objectif" name="group_objectif" icon="terp-personal" domain="[]"
                             context="{'group_by':'objectif_id'}"/>
                         </group>
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Actif" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactif" domain="[('active','=',False)]" />
                 </search>
             </field>
         </record>

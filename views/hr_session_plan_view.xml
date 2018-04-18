@@ -16,6 +16,7 @@
                         <group col="2" colspan="2">
                             <separator string="Plan de formation" colspan="2"/>
                                 <field name="plan_formation_id"/>
+                                <field name="active"/>
                             <separator string="Branches et modules" colspan="2"/>
                                 <field name="plan_formation_objectif_id"/>
                                 <field name="plan_formation_branche_id"/>
@@ -85,6 +86,9 @@
                         <filter string="Objectif" name="group_objectif" icon="terp-personal" domain="[]"
                             context="{'group_by':'objectif_id'}"/>
                         </group-->
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Actif" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactif" domain="[('active','=',False)]" />
                 </search>
             </field>
         </record>

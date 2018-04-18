@@ -22,6 +22,7 @@
                                 <field name="branche"/>
                                 <field name="module_id"/>
                                 <field name="intervenant"/>
+                                <field name="active"/>
                         </group>
                         <group col="4" colspan="2">
                             <separator string ="Prévision" colspan="4"/>
@@ -51,10 +52,11 @@
                                             <group col="2" colspan="4">
                                                 <field name="plan_formation_id"/>
                                                 <field name="plan_formation_objectif_id"/>
-                                                <field name="branche"/>
+                                                <field name="branche_id"/>
                                                 <field name="plan_formation_module_id"/>
                                                 <field name="date_debut_session"/>
                                                 <field name="date_fin_session"/>
+                                                <field name="instructor_id"/>
                                                 <field name="cout_session"/>
                                             </group>
                                         </form>
@@ -86,13 +88,38 @@
             </field>
         </record>
 
+        <!-- Vue Recherche Plan de Formation 3 -->
+
+        <record id="view_plan_elearning_search" model="ir.ui.view">
+            <field name="name">hr.plan.elearning.search</field>
+            <field name="model">hr.plan.elearning</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Formation">
+                    <field name="name"/>
+                    <field name="objectif_id"/>
+                    <!--field name="branche_id"/-->
+                    <field name="module_id"/>
+                        <group string="Group By…">
+                        <filter string="Plan" name="group_plan" icon="terp-personal" domain="[]"
+                            context="{'group_by':'name'}"/>
+                        <filter string="Objectif" name="group_objectif" icon="terp-personal" domain="[]"
+                            context="{'group_by':'objectif_id'}"/>
+                        </group>
+                    <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
+                    <filter name="filter_see_active" string="Actif" domain="[('active','=',True)]"/>
+                    <filter name="filter_see_inactive" string="Inactif" domain="[('active','=',False)]" />
+                </search>
+            </field>
+        </record>
+
         <!--Action du menu elearning -->
 
         <record model="ir.actions.act_window" id="action_gestion_elearning_2">
             <field name="name">Elearning</field>
             <field name="res_model">hr.plan.elearning</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
                     Créer un nouveau plan de formation

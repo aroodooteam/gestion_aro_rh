@@ -17,7 +17,7 @@
                             <field name="branche_id"/>
                         </group>
                         <group col="4" colspan="4">
-                            <field name="code"/>
+                            <!--field name="code"/-->
                             <field name="name"/>
                             <field name="active"/>
                             <field name="specificite_ids" colspan="4" nolabel="1" context="{'default_module_id': active_id}">
@@ -53,7 +53,7 @@
             <field name="name">hr.employee.formation.module.search</field>
             <field name="model">hr.employee.formation.module</field>
             <field name="arch" type="xml">
-                <search string="Departments">
+                <search string="Module">
                     <filter name="filter_see_all" string="All" domain="['|',('active','=',True),('active','=',False)]"/>
                     <filter name="filter_see_active" string="Active" domain="[('active','=',True)]"/>
                     <filter name="filter_see_inactive" string="Inactive" domain="[('active','=',False)]" />

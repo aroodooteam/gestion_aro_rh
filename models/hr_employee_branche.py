@@ -30,4 +30,6 @@ class HrEmployeeBranche(models.Model):
     name = fields.Char(string=u'Branche',size=128)
     active = fields.Boolean(string='Actif',default=True)
     module_ids = fields.One2many('hr.employee.formation.module','branche_id',string='Module')
+
+    
     

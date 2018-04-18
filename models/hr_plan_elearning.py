@@ -21,6 +21,7 @@ class hrPlanElearning(models.Model):
     objectif_id = fields.Many2one('hr.formation.objectif', string='Objectif')
     #session_elearning_ids = fields.Many2many('hrSessionElearning', string='Session e-learning')
     session_elearning_2_ids = fields.One2many('hr.session.elearning', 'plan_formation_id', string=u'Session e-learning')
+    active = fields.Boolean(string='Actif', default=True)
 
     # compute fields
     @api.depends ('beneficiaire', 'besoin_accorde')
