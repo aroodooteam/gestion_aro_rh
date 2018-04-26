@@ -20,7 +20,7 @@
                             <separator string="Général" colspan="2"/>
                                 <field name="objectif_id"/>
                                 <field name="branche"/>
-                                <field name="module_id"/>
+                                <field name="module_id" domain="[('branche_id','=',branche)]"/>
                                 <field name="intervenant"/>
                                 <field name="active"/>
                         </group>
