@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--?xml-stylesheet type="texte/css" href="/gestion_aro_rh/static/src/css/style_career.css"?-->
+
+
+<openerp>
+    <data>
+        <report
+            id="hr_employee_grade_history"
+            model="hr.employee"
+            string="Grade"
+            report_type="qweb-pdf"
+            name="gestion_aro_rh.hr_employee_grade_history_report"
+            file="gestion_aro_rh.hr_employee_grade_history_report"
+        />
+
+        <template id="hr_employee_grade_history_report">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="report.external_layout">
+                        <div class ="page">
+                            <!--style type="text/css">
+                                [class*="col-"], footer {
+                                    border: 2px solid black;
+                                    border-radius: 6px;
+                                    line-height: 40px;
+                                }
+                            </style-->
+                            <style type="text/css">
+                                [class*="col-"] {
+                                font-size:11;
+                                }
+                                h3 {font-size: 32; color:red; font-weight: bold;}
+                                h5 {text-align: center;font-size: 26; font-weight: bold;}
+                            </style>
+                            <div class="container">
+                                <div class ="row">
+                                    <div class = "col-xs-8 text-left">
+                        	<!--h2>
+                                <img src="/gestion_aro_rh/static/img/employee_joel.jpg" style="max-height:45 px;"/>
+                            </h2-->
+                                        <h3 t-field="doc.name"/>
+                                        <h4 t-field ="doc.matricule"/>
+                                        <p><b>Fonction:</b> <span t-field="doc.job_id"/></p>
+                                        <p><b>Service:</b> <span t-field="doc.department_id"/></p>
+                                        <p><b>Grade:</b> <span t-field="doc.category_ids.name"/></p>
+                                        <p><b>Né(e) le:</b> <span t-field="doc.birthday"/></p>
+                                        <p><b>Embauché(e) le:</b> <span t-field="doc.date"/></p>
+                                    </div>
+                                    <div class="col_xs_4 text-left">
+                                        <!--img src="/gestion_aro_rh/static/img/employee_joel.jpg" style="max-height:180 px;"/-->
+                                        <span t-field="doc.image_medium" t-field-options='{"widget": "image"}' style="max-height:180 px;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Fonction:</h5>
+                            <ul>
+                                <div class ="container">
+                                    <div class="row">
+                                        <div>
+                                            <div class = "col-xs-2 text-left"><b>Date</b></div>
+                                            <div class = "col-xs-4 text-left"><b>Grade</b></div>
+                                            <div class = "col-xs-6 text-left"><b>Observations</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <t t-foreach="doc.grade_ids" t-as="grade">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-2 text-left">
+                                                <span t-field="grade.date"/>
+                                            </div>
+                                            <div class="col-xs-4 text-left">
+                                                <span t-field = "grade.category_ids"/>
+                                            </div>
+                                            <div class="col-xs-6 text-left">
+                                                <span t-field="grade.commentaires"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </ul>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>

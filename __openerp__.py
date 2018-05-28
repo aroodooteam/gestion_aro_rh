@@ -72,6 +72,9 @@
         'employee_sanction_report.xml',
         'employee_notation_report.xml',
         'employee_last_job_report.xml',
+        'employee_job_history_report.xml',
+        'employee_grade_history_report.xml',
+        'employee_department_history_report.xml',
     ],
 
     "qweb": [],

@@ -31,16 +31,35 @@
                                 <field name="cout_session"/>
                         </group>
                             <separator string="Participants" colspan="2"/>
-                                <label for="attendee_ids"/>
-                                <field name="attendee_ids">
-                                    <tree string="Participants">
-                                        <field name="matricule"/>
-                                        <field name="name"/>
-                                        <field name="work_email"/>
-                                        <field name="department_id"/>
-                                        <field name="job_id"/>
+                            <notebook>
+                                <page string="Employés participants">
+                                    <label for="attendee_ids"/>
+                                    <field name="attendee_ids">
+                                        <tree string="Participants">
+                                            <field name="matricule"/>
+                                            <field name="name"/>
+                                            <field name="work_email"/>
+                                            <field name="department_id"/>
+                                            <field name="job_id"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                                <page string="Participants externes">
+                                    <field name="session_external_attendee_ids" colspan="4" nolabel="1">
+                                    <tree editable="top">
+                                        <field name="external_attendee_id" colspan="4"/>
+                                        <field name="agency_name" colspan="4"/>
                                     </tree>
+                                    <form string="externe">
+                                        <group col="2" colspan="2">
+                                            <field name="external_attendee_id"/>
+                                            <field name="agency_name"/>
+                                        </group>
+                                    </form>
                                 </field>
+                                </page>
+                            </notebook>
+                           
                     </sheet>
                 </form>
             </field>
