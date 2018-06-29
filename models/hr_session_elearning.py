@@ -13,6 +13,7 @@ class hrSessionElearning(models.Model):
     branche = fields.Char(string='Branche')
     #plan_formation_branche_id = fields.Char(related='plan_formation_id.branche_id.name', readonly=True,string='Branche')
     branche_id = fields.Char(related='plan_formation_id.branche', string='Branche')
+    specificite_id = fields.Many2one('hr.employee.module.specificite',string=u'Spécificité')
     date_debut_session = fields.Date(string=u'Date Début')
     date_fin_session = fields.Date(string='Date Fin')
     instructor_id = fields.Many2one('hr.formation.instructor', string='Animateur')

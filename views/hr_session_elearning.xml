@@ -16,6 +16,7 @@
                                 <!--field name="branche"/-->
                                 <field name="branche_id"/>
                                 <field name="plan_formation_module_id"/>
+                                <field name="specificite_id" domain="[('module_id','=',plan_formation_module_id)]"/>
                                 <field name="instructor_id"/>
                                 <field name="date_debut_session"/>
                                 <field name="date_fin_session"/>
