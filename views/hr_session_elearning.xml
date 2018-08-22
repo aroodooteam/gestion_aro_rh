@@ -9,6 +9,7 @@
             <field name="priority" eval="30"/>
             <field name="arch" type="xml">
                 <form string="Session de formation" colspan="2">
+                    <sheet class="oe_form_sheet_full_screen">
                         <group col="2" colspan="2">
                             <separator string="Plan de formation" colspan="2"/>
                                 <field name="plan_formation_id"/>
@@ -22,10 +23,14 @@
                                 <field name="specificite_id" domain="[('module_id','=',plan_formation_module_id)]"/>
                                 <field name="observations"/>
                                 <field name="instructor_id"/>
-                            <separator string="Chronogramme" colspan="2"/>
+                        </group>
+                        <group col="6" colspan="6">
+                            <separator string="Chronogramme" colspan="6"/>
                                 <field name="date_debut_session"/>
                                 <field name="date_fin_session"/>
                                 <field name="duree_session"/>
+                        </group>
+                        <group col="2" colspan="2">
                             <separator string="Coût" colspan="2"/>
                                 <field name="cout_session"/>
                         </group>
@@ -39,6 +44,7 @@
                                     <field name="job_id"/>
                                 </tree>
                             </field>
+                    </sheet>
                 </form>
             </field>
         </record>
