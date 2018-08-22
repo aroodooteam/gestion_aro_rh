@@ -26,6 +26,8 @@
                                 <field name="date_debut_session"/>
                                 <field name="date_fin_session"/>
                                 <field name="duree_session"/>
+                            <separator string="Coût" colspan="2"/>
+                                <field name="cout_session"/>
                         </group>
                             <separator string="Participants" colspan="2"/>
                             <label for="attendee_ids"/>
