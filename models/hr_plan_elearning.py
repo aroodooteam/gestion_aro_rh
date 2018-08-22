@@ -22,6 +22,7 @@ class hrPlanElearning(models.Model):
     #session_elearning_ids = fields.Many2many('hrSessionElearning', string='Session e-learning')
     session_elearning_2_ids = fields.One2many('hr.session.elearning', 'plan_formation_id', string=u'Session e-learning')
     active = fields.Boolean(string='Actif', default=True)
+    specificite_id = fields.Many2one('hr.employee.module.specificite',string=u'Spécificité')
 
     # compute fields
     @api.depends ('beneficiaire', 'besoin_accorde')
@@ -41,7 +42,8 @@ class hrPlanElearning(models.Model):
         for rec in result:
             # rec = (rec.id,  r_name)
             el_obj = self.browse(rec[0])
-            r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.module_id.name + '] '
+            #r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.specificite_id.name + '] '
+            r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.module_id.name + '] '+''+'[' + el_obj.specificite_id.name + ']'
             res.append((el_obj.id,  r_name))
         return res
         """

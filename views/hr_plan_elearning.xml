@@ -21,6 +21,7 @@
                                 <field name="objectif_id"/>
                                 <field name="branche"/>
                                 <field name="module_id" domain="[('branche_id','=',branche)]"/>
+                                <field name="specificite_id" domain="[('module_id','=',module_id)]"/>
                                 <field name="intervenant"/>
                                 <field name="active"/>
                         </group>
@@ -83,6 +84,7 @@
                     <field name="objectif_id"/>
                     <field name="branche"/>
                     <field name="module_id"/>
+                    <field name="specificite_id"/>
                     <field name="total_besoin"/>
                     <field name="budget_ariary"/>
                     <field name="budget_euro"/>
