@@ -44,9 +44,12 @@
                         </group>
                             <field name="session_elearning_2_ids" colspan="4" nolabel="1" context="{'default_plan_formation_id': active_id}">
                                         <tree string="Planification">
+                                            <field name="specificite_id"/>
                                             <field name="date_debut_session"/>
                                             <field name="date_fin_session"/>
+                                            <field name="instructor_id"/>
                                             <field name="cout_session"/>
+                                            <field name="observations"/>
                                         </tree>
                                         <form>
                                             <group col="2" colspan="4">
@@ -56,6 +59,8 @@
                                                 <field name="plan_formation_module_id"/>
                                                 <field name="date_debut_session"/>
                                                 <field name="date_fin_session"/>
+                                                <field name="specificite_id"/>
+                                                <field name="observations"/>
                                                 <field name="instructor_id"/>
                                                 <field name="cout_session"/>
                                             </group>

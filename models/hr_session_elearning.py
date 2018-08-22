@@ -20,3 +20,5 @@ class hrSessionElearning(models.Model):
     attendee_ids = fields.Many2many('hr.employee', string='Attendee')
     cout_session = fields.Float(string=u'Coût', digits=(6,2))
     active = fields.Boolean(string='Actif', default=True)
+    observations = fields.Text(string='Observations')
+    duree_session = fields.Float(string=u'Durée en heure',digits=(6,2))
