@@ -42,8 +42,8 @@ class hrPlanElearning(models.Model):
         for rec in result:
             # rec = (rec.id,  r_name)
             el_obj = self.browse(rec[0])
-            #r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.specificite_id.name + '] '
-            r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.module_id.name + '] '+''+'[' + el_obj.specificite_id.name + ']'
+            r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.module_id.name + '] '
+            #r_name = rec[1] + ' '+ '[' + el_obj.objectif_id.name + '] ' +' ' + '[' + el_obj.module_id.name + '] '+''+'[' + el_obj.specificite_id.name + ']'
             res.append((el_obj.id,  r_name))
         return res
         """
